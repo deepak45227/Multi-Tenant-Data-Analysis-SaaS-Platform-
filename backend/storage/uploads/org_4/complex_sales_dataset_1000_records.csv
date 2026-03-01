@@ -1,0 +1,1001 @@
+order_id,customer_name,customer_age,email,city,product,quantity,unit_price,total_revenue,payment_method,order_status,discount_percent,rating,order_date,delivery_days
+1,Rahul,40,snehagmail.com,Delhi,Keyboard,1.0,1999.0,1999,credit card,delivered,0,5,2023-10-17,5.0
+2,David,35,sneha@gmail.com,Chennai,Keyboard,1.0,1999.0,1999,credit card,pending,,4,2022-02-02,2.0
+3,Sara,22,rahul@yahoo.com,Kolkata,Mobile,5.0,9999.0,49995,Debit Card,Cancelled,0,1,2023-04-05,5.0
+4,David,40,amit@yahoo.com,Delhi,Headphones,3.0,9999.0,29997,Credit Card,delivered,10,N/A,2022-04-10,
+5,Sneha,35,priya@gmail.com,Kolkata,Laptop,3.0,25999.0,77997,upi,Pending,0,4,2023-09-26,3.0
+6,John,45,saragmail.com,DELHI,Keyboard,,9999.0,,Credit Card,delivered,five,2,2023-04-10,7.0
+7,David,NA,,Chennai,Keyboard,2.0,4999.0,9998,UPI,Delivered,5,N/A,2024-01-17,1.0
+8,Kiran,40,priyagmail.com,Hyderabad,Mobile,3.0,14999.0,44997,credit card,Returned,15,,2024-04-04,5.0
+9,Kiran,35,,Pune,Monitor,3.0,4999.0,14997,Cash,Cancelled,5,2,2022-05-27,7.0
+10,Mohit,25,rahulgmail.com,mumbai ,Laptop,1.0,1999.0,1999,Cash,Returned,,4,2023-05-21,7.0
+11,Sara,25,,Delhi,Tablet,5.0,1999.0,9995,Cash,Pending,15,1,2022-09-15,
+12,John,30,david@gmail.com,DELHI,Monitor,,9999.0,0,Net Banking,Pending,5,3,2024-06-15,-1.0
+13,Anjali,22,,Mumbai,Laptop,5.0,25999.0,129995,UPI,Cancelled,5,1,2022-06-15,2.0
+14,David,25,anjali@gmail.com,Bangalore,Mobile,5.0,1999.0,9995,credit card,Returned,,2,2024-06-18,3.0
+15,John,35,davidgmail.com,Pune,Keyboard,5.0,14999.0,74995,credit card,Cancelled,15,5,2023-06-25,5.0
+16,Kiran,25,sara@gmail.com,,Mobile,2.0,4999.0,9998,Net Banking,Pending,0,1,2022-05-04,
+17,Priya,25,,,Mobile,1.0,4999.0,4999,UPI,pending,15,2,2023-10-09,7.0
+18,Mohit,NA,sneha@yahoo.com,Chennai,Laptop,,25999.0,0,Credit Card,pending,15,3,2022-05-16,5.0
+19,Sara,25,amit@yahoo.com,Delhi,Mobile,4.0,,,Debit Card,Pending,,4,2023-02-25,2.0
+20,Anjali,NA,sneha@gmail.com,,Laptop,2.0,9999.0,19998,Credit Card,pending,,N/A,2023-03-09,1.0
+21,Anjali,30,mohit@yahoo.com,Chennai,Mouse,1.0,4999.0,4999,Cash,Delivered,5,4,2024-09-19,1.0
+22,Rahul,40,mohit@yahoo.com,Chennai,Tablet,3.0,14999.0,44997,Debit Card,Delivered,,,2023-02-04,7.0
+23,David,22,kiran@yahoo.com,,Mobile,,9999.0,,Credit Card,delivered,0,N/A,2022-03-04,2.0
+24,Kiran,35,mohit@gmail.com,Chennai,Monitor,5.0,1999.0,9995,Net Banking,Delivered,,1,2022-03-12,5.0
+25,Sara,45,johngmail.com,Chennai,Tablet,5.0,25999.0,129995,Cash,Pending,five,,2023-11-05,3.0
+26,Priya,22,anjali@gmail.com,,Mobile,3.0,1999.0,5997,Net Banking,Cancelled,5,3,2023-04-14,1.0
+27,David,40,rahul@yahoo.com,Kolkata,Monitor,2.0,9999.0,19998,upi,pending,,1,2024-06-19,
+28,Priya,25,,Delhi,Keyboard,5.0,9999.0,49995,Net Banking,Pending,10,3,2024-04-16,7.0
+29,John,40,david@yahoo.com,Mumbai,Laptop,,9999.0,,credit card,Returned,10,1,2022-08-04,1.0
+30,David,30,anjali@yahoo.com,Mumbai,Laptop,2.0,,unknown,Credit Card,pending,5,5,2022-12-08,1.0
+31,Amit,30,mohitgmail.com,Kolkata,Tablet,3.0,25999.0,77997,upi,Delivered,10,2,2024-05-04,
+32,Sneha,,kirangmail.com,Bangalore,Mouse,,1999.0,unknown,upi,Pending,15,1,2022-09-13,2.0
+33,Priya,35,johngmail.com,Pune,Mouse,3.0,14999.0,44997,Credit Card,Returned,5,2,2024-01-25,-1.0
+34,Amit,40,snehagmail.com,DELHI,Mobile,4.0,9999.0,39996,Cash,Cancelled,10,N/A,2024-07-29,1.0
+35,Amit,,,Delhi,Tablet,3.0,9999.0,29997,Debit Card,delivered,10,1,2024-09-17,1.0
+36,Mohit,45,mohit@gmail.com,mumbai ,Mobile,4.0,9999.0,39996,UPI,Delivered,five,4,2023-09-03,1.0
+37,Priya,35,sara@yahoo.com,DELHI,Tablet,5.0,,0,Net Banking,Cancelled,five,N/A,2023-06-17,1.0
+38,Mohit,40,,Kolkata,Monitor,3.0,25999.0,77997,Debit Card,Pending,15,,2024-01-08,5.0
+39,John,40,mohit@gmail.com,Kolkata,Mobile,,4999.0,0,Cash,delivered,,,2023-11-25,3.0
+40,Rahul,35,david@yahoo.com,DELHI,Laptop,4.0,14999.0,59996,UPI,delivered,five,,2023-04-22,7.0
+41,Rahul,40,snehagmail.com,Mumbai,Laptop,1.0,4999.0,4999,Debit Card,Returned,,N/A,2022-12-10,-1.0
+42,Mohit,35,mohit@yahoo.com,Chennai,Mobile,4.0,14999.0,59996,credit card,pending,0,N/A,2022-03-16,-1.0
+43,Amit,35,rahul@yahoo.com,,Mobile,1.0,14999.0,14999,upi,Delivered,15,2,2024-02-28,-1.0
+44,David,45,anjali@yahoo.com,Ahmedabad,Mobile,,25999.0,0,credit card,Returned,15,3,2023-04-21,-1.0
+45,Anjali,NA,,Delhi,Keyboard,,9999.0,0,UPI,Pending,10,3,2022-09-11,3.0
+46,Mohit,30,rahulgmail.com,Bangalore,Keyboard,5.0,1999.0,9995,Debit Card,Delivered,15,4,2024-07-03,3.0
+47,Mohit,22,sneha@yahoo.com,mumbai ,Keyboard,4.0,14999.0,59996,Credit Card,delivered,15,4,2023-07-10,1.0
+48,Anjali,,mohitgmail.com,Chennai,Tablet,3.0,9999.0,29997,Cash,Returned,0,4,2024-08-23,3.0
+49,Kiran,30,anjaligmail.com,,Laptop,,14999.0,0,Cash,delivered,,,2023-11-16,1.0
+50,John,NA,rahul@gmail.com,Pune,Tablet,,14999.0,,Debit Card,Returned,10,3,2022-03-27,-1.0
+51,Anjali,,john@gmail.com,Mumbai,Keyboard,4.0,9999.0,39996,Net Banking,Delivered,10,2,2024-06-19,
+52,Kiran,35,sneha@gmail.com,Bangalore,Mobile,,1999.0,,Debit Card,Returned,five,1,2022-03-12,7.0
+53,Kiran,40,saragmail.com,mumbai ,Keyboard,2.0,14999.0,29998,credit card,Delivered,5,3,2024-08-28,1.0
+54,Priya,,mohitgmail.com,mumbai ,Keyboard,1.0,9999.0,9999,upi,pending,5,1,2023-08-16,
+55,Sara,25,kiran@gmail.com,,Headphones,3.0,,0,credit card,Cancelled,0,5,2024-03-02,
+56,Sara,NA,priya@yahoo.com,DELHI,Mouse,1.0,14999.0,14999,Cash,pending,5,4,2022-12-16,2.0
+57,Kiran,NA,anjali@yahoo.com,Kolkata,Tablet,5.0,,unknown,upi,Pending,0,3,2024-01-22,5.0
+58,Anjali,,sara@gmail.com,Hyderabad,Mobile,4.0,25999.0,103996,Cash,Pending,10,N/A,2022-09-07,3.0
+59,David,40,david@gmail.com,Chennai,Laptop,3.0,25999.0,77997,Debit Card,pending,15,4,2022-12-15,7.0
+60,Priya,NA,anjali@gmail.com,Kolkata,Mobile,2.0,,unknown,Cash,pending,5,3,2024-02-16,
+61,Sara,45,,Ahmedabad,Tablet,3.0,14999.0,44997,UPI,Cancelled,5,1,2023-08-19,
+62,Anjali,30,snehagmail.com,Kolkata,Keyboard,3.0,1999.0,5997,Net Banking,delivered,,3,2022-07-17,1.0
+63,John,35,saragmail.com,Mumbai,Keyboard,2.0,9999.0,19998,Net Banking,Pending,10,1,2024-05-02,1.0
+64,Kiran,NA,priya@gmail.com,Kolkata,Headphones,3.0,,,Cash,Returned,10,2,2023-07-21,1.0
+65,Priya,25,mohit@yahoo.com,mumbai ,Keyboard,4.0,1999.0,7996,credit card,Delivered,5,2,2022-09-16,-1.0
+66,Kiran,35,priya@yahoo.com,mumbai ,Mouse,3.0,1999.0,5997,Net Banking,Pending,,4,2023-07-31,5.0
+67,Kiran,,john@gmail.com,Delhi,Mouse,4.0,9999.0,39996,Debit Card,pending,5,3,2024-07-19,
+68,Rahul,30,david@gmail.com,Mumbai,Headphones,2.0,4999.0,9998,Cash,pending,,4,2022-03-25,3.0
+69,Sneha,40,anjali@gmail.com,Kolkata,Mouse,2.0,9999.0,19998,upi,pending,,,2022-02-03,-1.0
+70,Rahul,25,davidgmail.com,Kolkata,Mouse,2.0,14999.0,29998,Debit Card,Delivered,0,2,2024-08-14,-1.0
+71,Anjali,40,anjali@gmail.com,Kolkata,Keyboard,5.0,,0,Cash,Cancelled,,5,2022-11-11,5.0
+72,Kiran,22,,Kolkata,Laptop,1.0,25999.0,25999,Credit Card,Pending,five,N/A,2023-03-25,-1.0
+73,Rahul,40,kiran@gmail.com,Ahmedabad,Monitor,5.0,1999.0,9995,credit card,Returned,10,2,2023-08-13,7.0
+74,Sara,NA,sara@yahoo.com,Hyderabad,Keyboard,,14999.0,,Credit Card,Pending,10,4,2023-03-23,
+75,Sara,22,anjali@gmail.com,Kolkata,Tablet,3.0,,unknown,Credit Card,Returned,,N/A,2023-05-23,1.0
+76,David,,amitgmail.com,Hyderabad,Monitor,5.0,14999.0,74995,upi,Returned,five,4,2023-11-05,-1.0
+77,Anjali,30,john@yahoo.com,Delhi,Laptop,2.0,9999.0,19998,credit card,delivered,5,,2022-02-22,2.0
+78,Priya,,priyagmail.com,Ahmedabad,Laptop,5.0,1999.0,9995,credit card,Pending,15,,2022-11-15,3.0
+79,Anjali,NA,anjaligmail.com,,Mobile,,9999.0,unknown,Cash,Pending,,5,2023-06-06,
+80,David,40,,Kolkata,Mouse,2.0,1999.0,3998,Credit Card,Cancelled,five,3,2024-06-19,-1.0
+81,Sara,30,anjali@yahoo.com,Hyderabad,Monitor,5.0,,unknown,upi,delivered,15,4,2023-08-25,3.0
+82,Amit,,sneha@yahoo.com,Hyderabad,Keyboard,2.0,,,Cash,pending,15,4,2024-06-09,
+83,Priya,22,,Ahmedabad,Laptop,,4999.0,unknown,Net Banking,Returned,0,,2024-03-22,2.0
+84,Kiran,NA,,Pune,Keyboard,,4999.0,,Credit Card,Cancelled,five,N/A,2023-02-24,7.0
+85,Kiran,NA,david@gmail.com,Delhi,Mobile,3.0,,0,credit card,pending,10,2,2023-01-25,
+86,John,25,anjaligmail.com,Mumbai,Laptop,4.0,1999.0,7996,UPI,Delivered,10,3,2022-04-03,3.0
+87,Rahul,,kirangmail.com,Bangalore,Laptop,2.0,4999.0,9998,Net Banking,Returned,,,2023-03-18,2.0
+88,Anjali,35,,Kolkata,Keyboard,5.0,4999.0,24995,Credit Card,Returned,10,,2023-05-25,7.0
+89,Mohit,45,,Kolkata,Headphones,1.0,14999.0,14999,upi,Cancelled,5,4,2022-06-11,-1.0
+90,Kiran,,,Kolkata,Keyboard,1.0,4999.0,4999,UPI,Delivered,five,4,2023-05-10,3.0
+91,John,22,kiran@yahoo.com,Chennai,Monitor,5.0,,0,upi,Cancelled,5,,2022-01-09,2.0
+92,John,30,priya@gmail.com,Ahmedabad,Laptop,3.0,,0,Net Banking,Cancelled,five,2,2023-09-28,1.0
+93,Rahul,,rahulgmail.com,,Tablet,3.0,9999.0,29997,Net Banking,delivered,10,N/A,2024-07-20,2.0
+94,Priya,45,priya@yahoo.com,Bangalore,Mouse,4.0,9999.0,39996,Debit Card,pending,five,,2022-09-21,5.0
+95,John,25,mohit@gmail.com,,Laptop,5.0,9999.0,49995,Cash,Cancelled,five,,2024-09-17,
+96,Anjali,45,priyagmail.com,Mumbai,Monitor,5.0,14999.0,74995,Net Banking,Cancelled,,2,2022-09-26,
+97,Rahul,40,mohit@gmail.com,Mumbai,Laptop,,14999.0,0,UPI,Returned,0,1,2022-03-06,2.0
+98,David,,,Pune,Monitor,5.0,4999.0,24995,credit card,pending,5,4,2024-06-27,
+99,Sara,,john@gmail.com,Chennai,Headphones,4.0,25999.0,103996,Cash,Pending,10,1,2022-04-12,
+100,Sneha,22,,Delhi,Mouse,5.0,,unknown,upi,Returned,0,,2023-01-12,2.0
+101,Rahul,22,saragmail.com,mumbai ,Mobile,,25999.0,,Credit Card,delivered,5,5,2023-10-20,2.0
+102,John,30,kiran@gmail.com,Bangalore,Mobile,2.0,9999.0,19998,Net Banking,Cancelled,5,1,2024-04-12,
+103,Kiran,22,saragmail.com,Hyderabad,Laptop,1.0,4999.0,4999,Debit Card,Cancelled,0,2,2024-06-06,
+104,Sara,25,anjali@yahoo.com,,Monitor,5.0,1999.0,9995,Credit Card,Returned,,2,2023-03-08,7.0
+105,Amit,40,anjali@gmail.com,Ahmedabad,Mouse,,,0,Cash,Returned,five,1,2022-02-14,5.0
+106,Priya,25,saragmail.com,Bangalore,Tablet,4.0,1999.0,7996,Net Banking,pending,,5,2023-12-31,
+107,Priya,40,anjali@yahoo.com,Delhi,Mouse,4.0,25999.0,103996,credit card,pending,,,2022-11-29,-1.0
+108,Anjali,35,,Pune,Headphones,4.0,14999.0,59996,credit card,Delivered,10,4,2022-08-09,3.0
+109,Priya,30,anjali@gmail.com,Delhi,Laptop,3.0,9999.0,29997,Cash,Delivered,five,,2023-11-13,3.0
+110,Priya,22,,Pune,Tablet,2.0,25999.0,51998,upi,pending,15,N/A,2024-04-11,
+111,Kiran,40,sara@gmail.com,,Mobile,3.0,25999.0,77997,Debit Card,pending,15,2,2022-02-22,-1.0
+112,Kiran,45,,Chennai,Mouse,3.0,25999.0,77997,Cash,delivered,,5,2022-04-21,
+113,John,40,amitgmail.com,Kolkata,Tablet,5.0,1999.0,9995,UPI,Delivered,5,N/A,2023-10-21,2.0
+114,David,30,amit@gmail.com,Chennai,Headphones,,14999.0,,Cash,Returned,10,2,2023-08-03,3.0
+115,Rahul,25,amitgmail.com,mumbai ,Laptop,,9999.0,0,credit card,Delivered,10,4,2022-11-16,
+116,Sneha,NA,,,Laptop,4.0,25999.0,103996,UPI,Returned,0,3,2023-03-11,
+117,Mohit,40,amitgmail.com,mumbai ,Laptop,5.0,14999.0,74995,Credit Card,Pending,10,2,2023-11-26,-1.0
+118,Anjali,45,priya@gmail.com,Pune,Mobile,3.0,9999.0,29997,Debit Card,Returned,,,2022-05-21,2.0
+119,Mohit,25,mohit@gmail.com,Mumbai,Headphones,5.0,,unknown,Credit Card,Cancelled,,4,2023-05-28,7.0
+120,Amit,40,priya@yahoo.com,Hyderabad,Mobile,,,unknown,upi,delivered,15,N/A,2023-02-19,
+121,Mohit,,priyagmail.com,mumbai ,Headphones,3.0,1999.0,5997,Net Banking,Delivered,15,N/A,2024-07-30,3.0
+122,David,45,rahul@gmail.com,DELHI,Laptop,3.0,4999.0,14997,Net Banking,delivered,5,N/A,2024-02-03,3.0
+123,John,35,priyagmail.com,Chennai,Mobile,,,,Net Banking,Pending,five,1,2022-12-26,2.0
+124,Sara,NA,,Bangalore,Headphones,,14999.0,unknown,Credit Card,Returned,15,,2024-09-01,3.0
+125,John,22,sara@gmail.com,Ahmedabad,Headphones,3.0,25999.0,77997,Credit Card,Delivered,10,N/A,2024-03-26,3.0
+126,Anjali,,anjali@gmail.com,mumbai ,Keyboard,,1999.0,0,Debit Card,Cancelled,,4,2022-03-20,7.0
+127,David,25,sara@gmail.com,DELHI,Mobile,1.0,14999.0,14999,Credit Card,Pending,five,4,2022-06-04,5.0
+128,John,30,,Pune,Headphones,5.0,25999.0,129995,upi,Cancelled,five,5,2023-06-21,1.0
+129,David,25,sara@gmail.com,DELHI,Headphones,,,unknown,UPI,Cancelled,five,N/A,2024-03-19,
+130,Sara,45,priyagmail.com,Kolkata,Keyboard,5.0,4999.0,24995,credit card,pending,15,2,2024-09-14,7.0
+131,David,,saragmail.com,Delhi,Keyboard,1.0,9999.0,9999,credit card,Returned,,3,2023-12-27,1.0
+132,Sneha,35,sara@yahoo.com,Chennai,Mobile,3.0,4999.0,14997,Debit Card,Delivered,10,N/A,2023-01-07,-1.0
+133,Kiran,22,saragmail.com,Pune,Mobile,5.0,25999.0,129995,Debit Card,Pending,five,N/A,2022-04-14,7.0
+134,Sneha,22,,Ahmedabad,Monitor,2.0,,unknown,UPI,pending,15,2,2024-04-08,7.0
+135,Anjali,35,sara@yahoo.com,Kolkata,Mouse,3.0,14999.0,44997,Cash,delivered,,4,2022-09-02,2.0
+136,Anjali,30,john@gmail.com,Hyderabad,Monitor,2.0,25999.0,51998,Credit Card,pending,,N/A,2024-04-16,1.0
+137,Mohit,40,anjaligmail.com,Delhi,Mobile,1.0,4999.0,4999,upi,Returned,10,1,2022-10-19,5.0
+138,Priya,45,sneha@yahoo.com,Hyderabad,Mobile,4.0,25999.0,103996,Credit Card,Cancelled,0,N/A,2022-02-24,
+139,Anjali,30,,Bangalore,Mouse,3.0,4999.0,14997,credit card,Returned,15,5,2023-10-28,1.0
+140,David,40,snehagmail.com,mumbai ,Monitor,1.0,1999.0,1999,Cash,Delivered,10,2,2024-07-16,3.0
+141,Priya,,kiran@yahoo.com,Delhi,Mouse,1.0,4999.0,4999,Cash,delivered,,1,2022-05-05,
+142,Amit,30,john@yahoo.com,mumbai ,Tablet,5.0,4999.0,24995,Debit Card,delivered,15,2,2023-06-12,
+143,Mohit,45,priya@gmail.com,Ahmedabad,Laptop,1.0,25999.0,25999,credit card,Returned,10,3,2023-11-16,
+144,Kiran,45,sneha@gmail.com,Hyderabad,Mobile,3.0,1999.0,5997,Credit Card,Cancelled,,3,2022-01-17,-1.0
+145,Priya,NA,rahulgmail.com,Ahmedabad,Laptop,2.0,,unknown,UPI,Pending,0,N/A,2023-10-21,2.0
+146,David,40,david@yahoo.com,Ahmedabad,Tablet,1.0,9999.0,9999,Credit Card,pending,5,3,2024-06-26,3.0
+147,Mohit,40,,Pune,Keyboard,1.0,,unknown,Cash,Returned,10,2,2024-06-01,5.0
+148,Priya,40,priya@yahoo.com,Pune,Monitor,4.0,9999.0,39996,upi,Pending,,3,2023-12-10,3.0
+149,Kiran,40,john@yahoo.com,Pune,Mobile,1.0,9999.0,9999,credit card,Returned,10,4,2022-04-16,1.0
+150,Priya,,john@gmail.com,DELHI,Keyboard,3.0,25999.0,77997,Cash,Cancelled,,N/A,2024-01-15,
+151,Amit,30,kiran@yahoo.com,Bangalore,Laptop,2.0,1999.0,3998,Debit Card,pending,10,3,2023-11-27,5.0
+152,Sara,30,,Ahmedabad,Mouse,5.0,1999.0,9995,Credit Card,delivered,5,5,2024-08-30,3.0
+153,Rahul,35,priya@gmail.com,Ahmedabad,Monitor,3.0,,unknown,Cash,delivered,0,3,2023-02-12,-1.0
+154,Priya,40,anjaligmail.com,Bangalore,Mouse,,14999.0,,Credit Card,Returned,5,,2022-09-24,5.0
+155,John,45,,Bangalore,Keyboard,,9999.0,0,credit card,pending,five,2,2022-03-31,-1.0
+156,Sneha,25,snehagmail.com,Ahmedabad,Laptop,5.0,4999.0,24995,UPI,delivered,,3,2023-01-06,5.0
+157,Mohit,25,,Ahmedabad,Monitor,5.0,4999.0,24995,Cash,Returned,,1,2024-04-02,2.0
+158,Rahul,NA,,,Keyboard,3.0,,,Net Banking,Pending,5,4,2024-09-22,7.0
+159,Rahul,30,johngmail.com,Hyderabad,Keyboard,1.0,1999.0,1999,Debit Card,Cancelled,,3,2024-07-21,-1.0
+160,Kiran,40,,,Laptop,3.0,4999.0,14997,Net Banking,pending,5,5,2022-03-22,7.0
+161,Amit,45,kiran@gmail.com,Delhi,Laptop,2.0,,0,credit card,delivered,10,,2022-06-07,2.0
+162,John,22,,Ahmedabad,Mobile,5.0,14999.0,74995,upi,pending,15,3,2024-02-25,5.0
+163,Anjali,NA,mohit@yahoo.com,Chennai,Tablet,,1999.0,,Net Banking,Pending,10,N/A,2022-03-16,
+164,Sara,30,sara@gmail.com,Chennai,Headphones,,9999.0,unknown,Credit Card,Cancelled,15,2,2022-11-23,2.0
+165,Sneha,,kiran@yahoo.com,Bangalore,Mouse,1.0,9999.0,9999,UPI,delivered,five,3,2022-04-10,2.0
+166,Anjali,NA,,Mumbai,Laptop,2.0,14999.0,29998,Cash,delivered,15,2,2024-02-21,2.0
+167,Kiran,22,john@yahoo.com,DELHI,Keyboard,3.0,1999.0,5997,Cash,Cancelled,,1,2023-08-21,-1.0
+168,Sara,40,sara@yahoo.com,Mumbai,Headphones,4.0,4999.0,19996,Credit Card,delivered,,2,2022-04-21,3.0
+169,David,,david@yahoo.com,Kolkata,Mouse,3.0,1999.0,5997,Net Banking,pending,,1,2023-07-21,2.0
+170,Rahul,45,,Chennai,Monitor,1.0,14999.0,14999,Net Banking,Returned,,1,2024-09-25,1.0
+171,Rahul,NA,david@yahoo.com,mumbai ,Monitor,2.0,,unknown,Debit Card,Cancelled,,3,2022-02-09,2.0
+172,Kiran,45,david@yahoo.com,Kolkata,Headphones,5.0,,unknown,upi,Delivered,10,3,2023-02-07,
+173,John,40,amit@yahoo.com,DELHI,Mouse,4.0,25999.0,103996,upi,delivered,,2,2022-04-23,
+174,Rahul,30,david@yahoo.com,DELHI,Mobile,5.0,14999.0,74995,Credit Card,delivered,five,1,2022-02-22,2.0
+175,Sneha,,rahul@yahoo.com,Pune,Monitor,4.0,9999.0,39996,upi,delivered,15,N/A,2022-01-20,-1.0
+176,David,30,davidgmail.com,Hyderabad,Keyboard,,1999.0,0,Cash,delivered,15,3,2024-01-24,2.0
+177,Sneha,45,john@yahoo.com,Chennai,Tablet,5.0,9999.0,49995,Net Banking,Cancelled,5,3,2023-04-16,-1.0
+178,Sara,NA,sara@yahoo.com,,Mouse,,4999.0,0,credit card,Cancelled,10,1,2022-10-23,7.0
+179,John,,saragmail.com,Mumbai,Tablet,5.0,14999.0,74995,credit card,Delivered,10,4,2023-11-24,
+180,David,35,,Kolkata,Mobile,,14999.0,,Credit Card,delivered,five,5,2022-09-20,2.0
+181,Priya,35,sneha@gmail.com,Pune,Tablet,1.0,,0,credit card,Returned,0,,2022-09-06,-1.0
+182,Anjali,30,mohit@yahoo.com,DELHI,Mobile,1.0,25999.0,25999,upi,Cancelled,10,3,2022-05-21,
+183,Rahul,35,david@gmail.com,Pune,Mouse,1.0,,0,Debit Card,Delivered,15,N/A,2022-03-02,5.0
+184,Sara,22,john@gmail.com,Kolkata,Headphones,,9999.0,,credit card,delivered,,4,2022-07-10,2.0
+185,Sara,40,sneha@gmail.com,Bangalore,Keyboard,5.0,14999.0,74995,Cash,pending,10,,2024-05-21,2.0
+186,Mohit,35,rahul@yahoo.com,,Tablet,,9999.0,unknown,Credit Card,Returned,five,1,2022-01-15,2.0
+187,Mohit,35,,Chennai,Headphones,4.0,9999.0,39996,upi,Cancelled,10,3,2022-05-24,7.0
+188,Amit,40,saragmail.com,DELHI,Laptop,5.0,1999.0,9995,Cash,Cancelled,5,4,2024-01-11,
+189,Kiran,25,,Chennai,Mobile,,9999.0,0,Debit Card,Returned,5,4,2023-05-30,
+190,Sneha,NA,davidgmail.com,DELHI,Mouse,3.0,14999.0,44997,Net Banking,Delivered,,4,2023-09-13,7.0
+191,Kiran,25,amitgmail.com,,Mobile,3.0,1999.0,5997,Debit Card,Cancelled,,4,2023-12-22,1.0
+192,Amit,NA,priya@yahoo.com,Ahmedabad,Mobile,2.0,,0,Net Banking,Returned,15,5,2023-11-28,1.0
+193,Amit,22,,Chennai,Monitor,4.0,,unknown,Credit Card,Delivered,15,3,2023-07-27,
+194,John,25,anjali@gmail.com,Pune,Mobile,5.0,1999.0,9995,upi,Pending,five,,2022-03-07,
+195,Mohit,,anjali@yahoo.com,Delhi,Keyboard,4.0,9999.0,39996,credit card,delivered,5,,2024-09-13,-1.0
+196,Sneha,,davidgmail.com,Mumbai,Mouse,1.0,4999.0,4999,Credit Card,Cancelled,15,,2022-12-23,
+197,Anjali,,snehagmail.com,Hyderabad,Mobile,4.0,25999.0,103996,UPI,Pending,five,N/A,2023-07-12,1.0
+198,Priya,22,snehagmail.com,Delhi,Monitor,,14999.0,0,Credit Card,Returned,,,2022-02-02,
+199,Sneha,22,mohit@yahoo.com,,Mobile,1.0,4999.0,4999,upi,Delivered,5,5,2024-06-12,3.0
+200,Rahul,45,,DELHI,Monitor,,25999.0,unknown,Debit Card,Returned,10,3,2022-08-28,1.0
+201,Amit,,david@yahoo.com,Hyderabad,Keyboard,5.0,,,credit card,Returned,,3,2023-07-25,
+202,David,40,mohitgmail.com,Ahmedabad,Mobile,4.0,4999.0,19996,upi,Pending,10,N/A,2023-03-03,
+203,Mohit,,mohitgmail.com,Chennai,Tablet,4.0,1999.0,7996,Debit Card,Cancelled,five,1,2022-05-28,5.0
+204,Mohit,35,,DELHI,Monitor,3.0,1999.0,5997,Net Banking,Delivered,0,2,2024-05-17,-1.0
+205,Sara,35,anjaligmail.com,Kolkata,Laptop,5.0,,0,Debit Card,Pending,five,1,2024-02-19,
+206,David,35,mohitgmail.com,Hyderabad,Mouse,4.0,4999.0,19996,UPI,Returned,15,5,2024-02-12,
+207,Anjali,45,david@yahoo.com,Delhi,Mouse,3.0,9999.0,29997,credit card,Returned,10,2,2023-01-03,3.0
+208,John,35,rahul@gmail.com,,Monitor,4.0,1999.0,7996,Net Banking,pending,15,3,2022-11-17,2.0
+209,Anjali,,kirangmail.com,,Keyboard,3.0,4999.0,14997,credit card,Cancelled,10,N/A,2022-07-20,-1.0
+210,Sara,NA,anjaligmail.com,Bangalore,Mobile,,,0,credit card,delivered,15,2,2023-05-16,7.0
+211,Amit,22,priya@gmail.com,Pune,Mobile,1.0,25999.0,25999,upi,pending,5,1,2023-10-20,
+212,Kiran,NA,sara@gmail.com,DELHI,Keyboard,1.0,4999.0,4999,Net Banking,Returned,five,4,2022-06-04,1.0
+213,David,,amit@gmail.com,Kolkata,Monitor,5.0,25999.0,129995,UPI,Delivered,,N/A,2022-01-07,
+214,Sneha,25,priyagmail.com,Chennai,Monitor,4.0,4999.0,19996,Net Banking,Cancelled,10,3,2023-11-22,-1.0
+215,Sneha,,anjaligmail.com,Kolkata,Keyboard,1.0,9999.0,9999,upi,Delivered,five,N/A,2023-02-11,
+216,David,,mohit@yahoo.com,Ahmedabad,Laptop,1.0,1999.0,1999,credit card,Delivered,five,2,2024-02-17,1.0
+217,Sneha,25,david@gmail.com,Chennai,Mouse,4.0,,unknown,credit card,delivered,15,3,2023-05-27,1.0
+218,Amit,22,,Chennai,Monitor,1.0,,unknown,Debit Card,pending,15,1,2024-08-04,3.0
+219,Mohit,,,Bangalore,Mouse,5.0,4999.0,24995,credit card,pending,0,5,2022-06-16,
+220,Priya,25,mohitgmail.com,Hyderabad,Monitor,3.0,1999.0,5997,upi,delivered,,4,2024-09-24,-1.0
+221,Sara,NA,anjaligmail.com,,Headphones,1.0,,unknown,Cash,Pending,five,5,2022-12-01,
+222,Priya,40,sneha@gmail.com,Kolkata,Mobile,1.0,25999.0,25999,Cash,pending,five,2,2023-01-25,
+223,John,25,priya@gmail.com,Ahmedabad,Tablet,3.0,9999.0,29997,upi,Cancelled,0,2,2023-02-03,1.0
+224,Priya,,priya@gmail.com,Hyderabad,Monitor,4.0,14999.0,59996,Credit Card,delivered,,N/A,2022-07-11,3.0
+225,Priya,40,mohit@yahoo.com,,Mobile,4.0,1999.0,7996,Net Banking,delivered,5,,2024-06-03,5.0
+226,Rahul,40,john@yahoo.com,Delhi,Mobile,2.0,9999.0,19998,Cash,Cancelled,15,3,2022-06-23,5.0
+227,Kiran,40,sneha@yahoo.com,mumbai ,Mobile,1.0,9999.0,9999,Cash,Delivered,5,3,2024-03-12,1.0
+228,Sara,,sara@yahoo.com,Pune,Mouse,4.0,9999.0,39996,upi,pending,,2,2024-08-29,3.0
+229,Mohit,NA,saragmail.com,Hyderabad,Tablet,5.0,,,credit card,pending,five,4,2022-11-25,7.0
+230,Sara,,john@yahoo.com,Delhi,Monitor,2.0,9999.0,19998,Debit Card,delivered,,2,2024-03-11,
+231,John,NA,sneha@yahoo.com,Delhi,Mouse,5.0,1999.0,9995,upi,Returned,five,4,2024-02-26,2.0
+232,Mohit,40,rahul@yahoo.com,Delhi,Headphones,3.0,4999.0,14997,Net Banking,Returned,,4,2023-10-11,7.0
+233,Priya,22,sara@gmail.com,Chennai,Keyboard,,14999.0,0,credit card,Cancelled,5,,2023-06-03,7.0
+234,Priya,,sara@yahoo.com,Mumbai,Laptop,5.0,,0,UPI,Pending,,,2022-02-15,7.0
+235,Mohit,35,,Ahmedabad,Mouse,5.0,,0,credit card,delivered,five,5,2023-07-26,2.0
+236,Priya,25,john@yahoo.com,Delhi,Mouse,1.0,14999.0,14999,credit card,Pending,10,3,2022-12-20,3.0
+237,Priya,NA,sara@yahoo.com,Ahmedabad,Keyboard,2.0,25999.0,51998,credit card,Returned,10,1,2023-04-12,3.0
+238,Sneha,45,priyagmail.com,,Mobile,,1999.0,,Net Banking,Pending,10,5,2022-02-15,5.0
+239,Mohit,,rahulgmail.com,Pune,Laptop,4.0,4999.0,19996,credit card,delivered,5,4,2024-09-08,7.0
+240,Priya,35,,mumbai ,Laptop,4.0,1999.0,7996,upi,delivered,5,3,2023-03-16,3.0
+241,Kiran,40,,Pune,Monitor,4.0,1999.0,7996,Cash,delivered,0,3,2022-07-21,3.0
+242,Rahul,30,john@gmail.com,Hyderabad,Laptop,4.0,25999.0,103996,Debit Card,Cancelled,0,2,2024-05-15,3.0
+243,Kiran,,mohitgmail.com,Pune,Headphones,2.0,25999.0,51998,Debit Card,Returned,five,5,2023-12-12,
+244,Rahul,30,,Bangalore,Tablet,,4999.0,0,upi,Returned,,1,2024-07-30,-1.0
+245,David,30,sneha@yahoo.com,,Keyboard,1.0,14999.0,14999,Cash,Returned,five,4,2023-01-03,5.0
+246,Sneha,30,priya@gmail.com,Kolkata,Laptop,4.0,14999.0,59996,UPI,Pending,,3,2023-12-29,2.0
+247,Kiran,NA,david@gmail.com,Delhi,Tablet,4.0,25999.0,103996,upi,delivered,10,5,2024-03-10,-1.0
+248,Sneha,35,mohit@gmail.com,Kolkata,Mouse,1.0,,unknown,Credit Card,Returned,10,3,2024-02-14,-1.0
+249,Kiran,25,snehagmail.com,Hyderabad,Mouse,1.0,14999.0,14999,credit card,delivered,five,4,2024-04-16,2.0
+250,David,35,,Kolkata,Monitor,2.0,4999.0,9998,Net Banking,Pending,10,,2023-09-23,3.0
+251,Amit,25,rahul@yahoo.com,Kolkata,Mouse,5.0,9999.0,49995,credit card,Pending,five,N/A,2022-10-24,2.0
+252,Rahul,35,mohit@yahoo.com,mumbai ,Keyboard,2.0,,unknown,UPI,pending,15,4,2022-09-13,5.0
+253,Anjali,40,sara@yahoo.com,Hyderabad,Monitor,,1999.0,unknown,Credit Card,pending,0,,2022-03-19,5.0
+254,Sneha,25,david@yahoo.com,Pune,Mouse,,,unknown,Debit Card,Returned,10,3,2023-10-13,-1.0
+255,Sara,30,kiran@yahoo.com,DELHI,Mouse,3.0,25999.0,77997,Credit Card,Delivered,0,,2022-10-18,-1.0
+256,Anjali,25,rahul@yahoo.com,Mumbai,Headphones,4.0,1999.0,7996,Debit Card,pending,5,,2024-05-06,3.0
+257,Sara,45,john@gmail.com,DELHI,Keyboard,3.0,1999.0,5997,Debit Card,Delivered,15,,2022-06-12,3.0
+258,Sneha,25,priya@gmail.com,Ahmedabad,Laptop,,4999.0,unknown,Debit Card,delivered,5,5,2024-01-14,
+259,Rahul,45,priya@yahoo.com,Ahmedabad,Laptop,1.0,1999.0,1999,Debit Card,Returned,0,,2023-04-01,-1.0
+260,Mohit,45,johngmail.com,Bangalore,Keyboard,1.0,9999.0,9999,credit card,Pending,0,5,2022-04-15,7.0
+261,Rahul,NA,saragmail.com,Pune,Monitor,5.0,,,credit card,Returned,5,1,2022-01-09,1.0
+262,Sara,,sara@yahoo.com,Bangalore,Mobile,1.0,25999.0,25999,UPI,pending,0,2,2022-05-24,7.0
+263,Sneha,40,,,Monitor,5.0,,0,Net Banking,Pending,five,4,2023-09-08,3.0
+264,Sneha,NA,mohit@gmail.com,Ahmedabad,Keyboard,1.0,4999.0,4999,Net Banking,Delivered,,1,2023-10-24,3.0
+265,Sara,,kiran@yahoo.com,,Keyboard,3.0,4999.0,14997,Debit Card,Returned,0,1,2024-08-14,7.0
+266,Mohit,35,amit@gmail.com,,Tablet,1.0,9999.0,9999,credit card,pending,,N/A,2022-03-11,5.0
+267,John,30,john@gmail.com,Delhi,Monitor,,14999.0,,Debit Card,Pending,,3,2023-03-10,5.0
+268,Sneha,25,john@yahoo.com,Mumbai,Mobile,,,0,Credit Card,Returned,0,4,2023-08-24,7.0
+269,Rahul,30,priya@gmail.com,Mumbai,Mobile,1.0,9999.0,9999,Cash,Cancelled,,5,2023-09-16,-1.0
+270,Priya,45,,Mumbai,Tablet,,9999.0,,upi,Returned,10,5,2024-04-22,1.0
+271,David,25,anjali@yahoo.com,Hyderabad,Laptop,,25999.0,0,Cash,delivered,5,3,2022-09-27,2.0
+272,Amit,25,sneha@gmail.com,Mumbai,Mobile,1.0,25999.0,25999,Credit Card,Returned,10,4,2022-09-19,2.0
+273,Sneha,,,Pune,Keyboard,1.0,25999.0,25999,UPI,Cancelled,0,5,2022-07-03,3.0
+274,Mohit,30,sneha@gmail.com,Delhi,Headphones,5.0,,,upi,Cancelled,10,3,2022-05-03,1.0
+275,Kiran,45,,Kolkata,Keyboard,4.0,1999.0,7996,Net Banking,Pending,15,3,2023-07-21,7.0
+276,Mohit,35,rahul@gmail.com,Mumbai,Mobile,4.0,4999.0,19996,Net Banking,Cancelled,five,N/A,2024-09-22,
+277,Priya,22,,Chennai,Monitor,1.0,9999.0,9999,Debit Card,Returned,15,1,2024-06-17,2.0
+278,Sara,22,sneha@yahoo.com,Ahmedabad,Keyboard,3.0,1999.0,5997,Credit Card,delivered,0,5,2023-12-30,2.0
+279,Sneha,22,mohitgmail.com,Kolkata,Tablet,4.0,1999.0,7996,upi,Cancelled,15,,2023-10-15,-1.0
+280,Priya,NA,johngmail.com,Chennai,Mobile,3.0,9999.0,29997,upi,delivered,0,2,2024-01-24,1.0
+281,David,45,mohit@gmail.com,Hyderabad,Mouse,4.0,14999.0,59996,Debit Card,Returned,10,4,2022-06-18,3.0
+282,Sneha,30,john@gmail.com,Hyderabad,Mobile,1.0,1999.0,1999,Credit Card,pending,5,3,2024-05-22,5.0
+283,Mohit,40,rahul@gmail.com,Ahmedabad,Monitor,1.0,,unknown,credit card,delivered,5,1,2023-06-10,5.0
+284,Rahul,22,amitgmail.com,Chennai,Mouse,2.0,1999.0,3998,Cash,Cancelled,five,,2022-04-15,
+285,Priya,40,priya@gmail.com,Chennai,Keyboard,5.0,25999.0,129995,Cash,Pending,0,N/A,2022-03-28,-1.0
+286,Rahul,22,anjali@gmail.com,mumbai ,Headphones,3.0,1999.0,5997,upi,pending,15,4,2024-04-08,1.0
+287,John,45,snehagmail.com,Kolkata,Headphones,,14999.0,,Debit Card,Delivered,,5,2023-01-27,7.0
+288,Amit,,david@yahoo.com,Delhi,Tablet,,9999.0,unknown,Cash,Pending,15,2,2022-09-09,
+289,Anjali,22,,,Mouse,5.0,4999.0,24995,Cash,Cancelled,,5,2024-06-24,3.0
+290,Amit,22,saragmail.com,Kolkata,Laptop,3.0,4999.0,14997,upi,Returned,,3,2023-02-02,-1.0
+291,John,25,snehagmail.com,,Mouse,2.0,4999.0,9998,upi,pending,0,N/A,2023-08-22,2.0
+292,Kiran,30,rahulgmail.com,Hyderabad,Mouse,4.0,9999.0,39996,credit card,pending,10,5,2023-08-13,1.0
+293,Anjali,30,kirangmail.com,,Tablet,,9999.0,0,Debit Card,Returned,0,1,2023-12-22,1.0
+294,Amit,22,david@yahoo.com,Hyderabad,Monitor,5.0,4999.0,24995,Debit Card,Pending,10,,2022-08-27,2.0
+295,Priya,22,rahulgmail.com,,Mouse,3.0,1999.0,5997,UPI,Delivered,10,,2024-07-29,
+296,Rahul,45,,Bangalore,Keyboard,5.0,1999.0,9995,Cash,pending,15,,2023-02-10,3.0
+297,Mohit,45,snehagmail.com,Kolkata,Keyboard,,25999.0,0,credit card,Cancelled,5,2,2022-06-28,
+298,Kiran,22,,Chennai,Keyboard,,25999.0,unknown,Net Banking,Delivered,15,2,2022-01-02,3.0
+299,Priya,45,saragmail.com,DELHI,Keyboard,1.0,4999.0,4999,credit card,Cancelled,15,1,2024-02-03,3.0
+300,Amit,45,john@gmail.com,Mumbai,Headphones,2.0,,,Cash,pending,15,2,2022-08-03,5.0
+301,Kiran,,priya@yahoo.com,DELHI,Mouse,4.0,9999.0,39996,credit card,Pending,5,4,2023-05-20,1.0
+302,Priya,22,,Delhi,Tablet,1.0,9999.0,9999,Debit Card,Returned,5,,2024-03-29,1.0
+303,Rahul,NA,amit@yahoo.com,mumbai ,Headphones,1.0,9999.0,9999,Debit Card,Delivered,0,3,2023-07-15,2.0
+304,Sneha,40,,Delhi,Laptop,2.0,14999.0,29998,Cash,delivered,,N/A,2024-09-24,5.0
+305,John,22,mohit@gmail.com,DELHI,Keyboard,1.0,9999.0,9999,Net Banking,Returned,5,1,2022-06-07,1.0
+306,John,25,anjali@gmail.com,Pune,Headphones,2.0,,unknown,Cash,pending,10,1,2022-07-31,
+307,Rahul,45,,Ahmedabad,Laptop,4.0,4999.0,19996,UPI,Returned,15,3,2023-07-12,2.0
+308,Priya,22,rahul@gmail.com,DELHI,Tablet,3.0,25999.0,77997,upi,delivered,15,N/A,2024-05-07,7.0
+309,David,,david@yahoo.com,DELHI,Mouse,5.0,1999.0,9995,Cash,delivered,5,4,2022-08-21,3.0
+310,Rahul,30,priya@yahoo.com,Bangalore,Mobile,4.0,,,upi,Pending,5,1,2022-03-22,5.0
+311,Sara,30,,Delhi,Laptop,,14999.0,,Cash,delivered,15,5,2022-03-22,3.0
+312,Priya,NA,amit@yahoo.com,Pune,Mobile,3.0,25999.0,77997,Debit Card,delivered,,5,2024-05-27,-1.0
+313,Mohit,25,,Kolkata,Headphones,1.0,1999.0,1999,credit card,Returned,,5,2024-09-14,5.0
+314,Amit,,rahul@yahoo.com,Pune,Tablet,2.0,9999.0,19998,credit card,Pending,0,,2022-02-08,5.0
+315,John,22,,Kolkata,Mouse,3.0,9999.0,29997,Cash,pending,five,1,2024-07-31,-1.0
+316,Mohit,NA,,mumbai ,Keyboard,2.0,9999.0,19998,Credit Card,Pending,15,2,2022-08-22,-1.0
+317,Priya,45,amitgmail.com,Kolkata,Keyboard,,14999.0,0,Net Banking,Returned,5,N/A,2023-02-21,-1.0
+318,Amit,30,snehagmail.com,Chennai,Laptop,5.0,1999.0,9995,Cash,Delivered,10,,2023-06-21,2.0
+319,Sneha,,priya@gmail.com,Hyderabad,Headphones,3.0,14999.0,44997,Net Banking,Returned,5,N/A,2022-10-08,5.0
+320,Priya,45,,Kolkata,Laptop,5.0,9999.0,49995,Cash,Delivered,5,N/A,2023-08-24,7.0
+321,Mohit,35,,,Laptop,2.0,4999.0,9998,upi,pending,0,4,2024-03-09,2.0
+322,Kiran,22,,Kolkata,Keyboard,2.0,25999.0,51998,credit card,pending,10,4,2023-10-25,5.0
+323,John,40,sneha@yahoo.com,DELHI,Monitor,3.0,14999.0,44997,upi,delivered,15,5,2024-05-22,1.0
+324,Anjali,40,john@gmail.com,Delhi,Tablet,5.0,,unknown,UPI,pending,10,N/A,2022-01-08,3.0
+325,David,40,snehagmail.com,Chennai,Laptop,,,0,upi,delivered,15,,2022-09-25,3.0
+326,Mohit,NA,,Pune,Headphones,2.0,,,credit card,Delivered,,,2023-11-29,7.0
+327,Sara,35,david@yahoo.com,,Tablet,2.0,9999.0,19998,upi,Pending,five,5,2024-04-15,2.0
+328,Sara,30,johngmail.com,DELHI,Laptop,1.0,14999.0,14999,Debit Card,Cancelled,5,,2022-10-28,-1.0
+329,Anjali,45,,Delhi,Headphones,4.0,9999.0,39996,Credit Card,pending,,5,2022-11-11,7.0
+330,Mohit,25,,Mumbai,Mouse,4.0,4999.0,19996,upi,Pending,5,2,2022-03-14,3.0
+331,Priya,30,saragmail.com,Ahmedabad,Tablet,5.0,14999.0,74995,credit card,Pending,10,,2023-02-24,1.0
+332,Anjali,35,rahulgmail.com,Delhi,Mobile,4.0,9999.0,39996,Net Banking,Returned,five,4,2022-01-05,5.0
+333,Sara,22,amitgmail.com,Mumbai,Tablet,4.0,14999.0,59996,upi,delivered,5,1,2023-03-16,
+334,Rahul,35,,Delhi,Headphones,,,,Net Banking,delivered,10,2,2022-01-05,1.0
+335,Mohit,40,,DELHI,Mobile,1.0,9999.0,9999,UPI,Returned,10,N/A,2024-04-23,2.0
+336,Sneha,35,snehagmail.com,Mumbai,Monitor,4.0,1999.0,7996,Net Banking,Pending,0,3,2022-06-18,
+337,Kiran,40,david@gmail.com,Mumbai,Keyboard,1.0,14999.0,14999,Credit Card,pending,0,1,2023-10-29,
+338,Anjali,,,Bangalore,Mobile,4.0,14999.0,59996,credit card,pending,five,1,2022-04-29,3.0
+339,Mohit,40,kirangmail.com,Delhi,Monitor,,1999.0,0,credit card,delivered,0,3,2023-03-07,1.0
+340,John,35,kirangmail.com,,Mobile,1.0,14999.0,14999,UPI,pending,15,3,2024-03-14,2.0
+341,Sneha,35,,Mumbai,Laptop,5.0,14999.0,74995,credit card,Delivered,0,N/A,2022-02-10,7.0
+342,Priya,25,david@gmail.com,Kolkata,Keyboard,4.0,4999.0,19996,Debit Card,Returned,10,3,2023-11-17,5.0
+343,Sara,22,,Pune,Keyboard,1.0,4999.0,4999,Credit Card,Delivered,0,1,2022-02-21,-1.0
+344,Kiran,45,sara@yahoo.com,Kolkata,Keyboard,,,,Credit Card,Cancelled,10,2,2022-05-22,1.0
+345,Mohit,40,mohit@yahoo.com,DELHI,Mouse,4.0,14999.0,59996,Debit Card,Delivered,5,,2023-02-15,
+346,Kiran,,kiran@yahoo.com,DELHI,Headphones,2.0,1999.0,3998,Debit Card,delivered,15,N/A,2022-03-02,3.0
+347,Priya,30,anjali@yahoo.com,Pune,Headphones,1.0,,0,Credit Card,Delivered,10,,2023-09-19,3.0
+348,Mohit,35,sara@gmail.com,DELHI,Keyboard,,,0,Debit Card,Returned,10,,2022-01-13,
+349,David,22,amitgmail.com,Ahmedabad,Mouse,4.0,4999.0,19996,Cash,Pending,0,N/A,2023-10-19,5.0
+350,David,40,amitgmail.com,DELHI,Headphones,2.0,9999.0,19998,Cash,Pending,0,4,2022-11-25,5.0
+351,Sara,25,anjali@yahoo.com,Delhi,Headphones,5.0,14999.0,74995,credit card,pending,0,1,2024-03-31,5.0
+352,David,22,,,Mobile,1.0,25999.0,25999,credit card,pending,15,3,2023-02-27,3.0
+353,Sara,NA,sara@yahoo.com,Ahmedabad,Laptop,1.0,4999.0,4999,Credit Card,pending,5,1,2024-04-25,3.0
+354,Rahul,45,priya@gmail.com,Ahmedabad,Mobile,,9999.0,0,upi,pending,five,,2022-12-30,5.0
+355,Mohit,35,sneha@gmail.com,Chennai,Headphones,3.0,25999.0,77997,upi,Pending,five,3,2022-04-20,1.0
+356,Kiran,25,anjali@yahoo.com,,Mobile,4.0,1999.0,7996,Cash,Delivered,,,2024-02-15,1.0
+357,Kiran,NA,davidgmail.com,Bangalore,Keyboard,4.0,25999.0,103996,upi,Pending,0,4,2023-07-21,
+358,John,,mohitgmail.com,Pune,Tablet,5.0,9999.0,49995,UPI,Returned,5,2,2023-09-07,5.0
+359,David,40,,DELHI,Mobile,,,0,Debit Card,Pending,,,2023-09-09,3.0
+360,Priya,30,,Hyderabad,Monitor,3.0,,,Cash,delivered,,,2023-12-05,
+361,David,40,mohit@gmail.com,Delhi,Laptop,,,0,Cash,Pending,0,,2023-03-04,1.0
+362,Amit,40,johngmail.com,Kolkata,Mobile,3.0,4999.0,14997,upi,delivered,0,3,2022-07-24,-1.0
+363,Sneha,35,david@yahoo.com,,Mouse,1.0,25999.0,25999,upi,pending,10,,2023-04-09,
+364,Amit,,sara@gmail.com,Kolkata,Mobile,4.0,14999.0,59996,Net Banking,Returned,5,,2022-02-18,
+365,Anjali,35,,Bangalore,Keyboard,,9999.0,0,Credit Card,Pending,5,,2023-12-28,7.0
+366,Rahul,,,Bangalore,Monitor,4.0,1999.0,7996,upi,Cancelled,0,3,2022-05-03,5.0
+367,Kiran,30,sara@gmail.com,DELHI,Tablet,2.0,1999.0,3998,Cash,delivered,,3,2023-12-28,1.0
+368,David,35,rahul@gmail.com,Bangalore,Headphones,,9999.0,0,Net Banking,delivered,15,1,2024-03-13,3.0
+369,Sneha,45,,mumbai ,Monitor,2.0,,unknown,Cash,delivered,five,1,2022-08-15,1.0
+370,Amit,35,kirangmail.com,DELHI,Tablet,3.0,14999.0,44997,Cash,Delivered,15,3,2023-11-16,7.0
+371,Anjali,45,david@yahoo.com,Mumbai,Tablet,3.0,1999.0,5997,credit card,Pending,10,5,2024-01-12,1.0
+372,Sneha,22,priyagmail.com,DELHI,Headphones,1.0,4999.0,4999,upi,Delivered,5,5,2024-08-28,-1.0
+373,Anjali,25,rahul@gmail.com,Hyderabad,Laptop,,14999.0,0,Credit Card,Delivered,0,2,2023-12-21,-1.0
+374,Mohit,35,john@yahoo.com,Ahmedabad,Keyboard,5.0,1999.0,9995,Cash,Returned,10,1,2022-09-15,5.0
+375,Kiran,22,kiran@gmail.com,Mumbai,Keyboard,1.0,25999.0,25999,upi,Delivered,10,5,2023-11-21,1.0
+376,Mohit,25,john@yahoo.com,Pune,Mouse,,9999.0,0,credit card,Delivered,15,2,2022-10-24,7.0
+377,Sara,40,,Mumbai,Monitor,2.0,,unknown,upi,delivered,5,1,2022-08-14,1.0
+378,John,,david@gmail.com,Chennai,Keyboard,5.0,25999.0,129995,credit card,pending,10,2,2022-01-06,5.0
+379,Kiran,30,rahulgmail.com,Kolkata,Mobile,,25999.0,,Credit Card,Pending,five,N/A,2024-07-16,7.0
+380,John,NA,david@gmail.com,DELHI,Laptop,1.0,25999.0,25999,UPI,Delivered,5,,2024-05-22,7.0
+381,John,30,sneha@gmail.com,mumbai ,Laptop,3.0,9999.0,29997,Debit Card,Cancelled,15,4,2023-05-14,3.0
+382,Sara,30,,Pune,Mobile,,9999.0,0,Credit Card,Cancelled,5,N/A,2023-09-24,2.0
+383,Sara,40,saragmail.com,Ahmedabad,Headphones,,,unknown,Cash,Cancelled,10,4,2023-12-31,7.0
+384,David,25,johngmail.com,Chennai,Tablet,2.0,,0,credit card,pending,0,,2022-04-22,1.0
+385,Kiran,22,kiran@yahoo.com,Chennai,Laptop,1.0,25999.0,25999,Net Banking,Cancelled,,5,2024-07-02,5.0
+386,Rahul,,,Ahmedabad,Monitor,2.0,9999.0,19998,Net Banking,Delivered,15,3,2023-11-01,7.0
+387,Anjali,30,davidgmail.com,Bangalore,Mobile,,4999.0,0,Net Banking,delivered,five,N/A,2022-01-11,2.0
+388,Sneha,22,sneha@yahoo.com,Delhi,Tablet,,14999.0,unknown,UPI,Pending,0,,2024-01-24,2.0
+389,Amit,NA,anjali@gmail.com,DELHI,Tablet,3.0,14999.0,44997,Credit Card,pending,,,2023-06-15,-1.0
+390,Sara,30,mohit@yahoo.com,mumbai ,Keyboard,,9999.0,0,upi,Delivered,,3,2022-10-08,5.0
+391,Anjali,,,Ahmedabad,Monitor,2.0,25999.0,51998,Credit Card,delivered,5,4,2024-09-23,2.0
+392,Rahul,40,snehagmail.com,Bangalore,Tablet,1.0,25999.0,25999,Net Banking,pending,0,,2022-08-24,2.0
+393,Sneha,NA,anjali@yahoo.com,mumbai ,Mobile,3.0,,,credit card,Returned,0,2,2023-03-01,1.0
+394,Kiran,30,rahul@gmail.com,Bangalore,Laptop,5.0,25999.0,129995,Debit Card,Cancelled,5,5,2022-05-11,5.0
+395,Anjali,40,priyagmail.com,mumbai ,Headphones,5.0,,,upi,Returned,5,2,2023-09-06,-1.0
+396,Rahul,30,,DELHI,Tablet,5.0,4999.0,24995,Cash,delivered,,1,2023-02-25,2.0
+397,David,25,amitgmail.com,,Keyboard,4.0,4999.0,19996,Cash,Pending,,1,2023-01-23,2.0
+398,Priya,22,david@gmail.com,Ahmedabad,Keyboard,5.0,25999.0,129995,Debit Card,delivered,,N/A,2023-05-03,1.0
+399,David,,sara@gmail.com,Pune,Mobile,,,unknown,upi,Returned,15,3,2024-07-07,7.0
+400,John,25,mohitgmail.com,Ahmedabad,Mouse,,,0,Debit Card,Delivered,10,5,2024-04-03,7.0
+401,David,22,amit@gmail.com,Mumbai,Headphones,3.0,4999.0,14997,credit card,Pending,five,N/A,2023-02-23,3.0
+402,John,30,,,Headphones,3.0,1999.0,5997,Net Banking,Cancelled,,3,2023-02-23,
+403,David,NA,,,Headphones,2.0,14999.0,29998,UPI,Cancelled,,3,2023-02-11,-1.0
+404,Rahul,25,sneha@yahoo.com,Delhi,Mobile,4.0,,,Net Banking,Returned,10,N/A,2023-12-24,7.0
+405,Amit,22,rahul@yahoo.com,Delhi,Mouse,,,0,Debit Card,Returned,,4,2023-09-21,1.0
+406,Mohit,45,priya@gmail.com,Pune,Monitor,3.0,4999.0,14997,credit card,delivered,10,,2022-03-07,7.0
+407,David,NA,amitgmail.com,Kolkata,Mobile,2.0,,unknown,Credit Card,delivered,,5,2022-02-28,
+408,Amit,22,saragmail.com,Bangalore,Laptop,5.0,4999.0,24995,UPI,Returned,10,,2022-08-26,5.0
+409,David,22,priya@gmail.com,Kolkata,Keyboard,5.0,4999.0,24995,upi,delivered,,3,2023-02-20,3.0
+410,Kiran,35,anjali@yahoo.com,Mumbai,Tablet,3.0,4999.0,14997,Debit Card,Returned,,1,2024-09-13,7.0
+411,David,45,,mumbai ,Tablet,5.0,9999.0,49995,credit card,Returned,15,5,2022-03-16,5.0
+412,Anjali,NA,anjali@gmail.com,Delhi,Tablet,2.0,9999.0,19998,Credit Card,Returned,five,N/A,2024-02-28,2.0
+413,John,,sara@gmail.com,Chennai,Tablet,,4999.0,unknown,Credit Card,Returned,five,,2023-11-25,-1.0
+414,Sara,30,,Chennai,Monitor,1.0,25999.0,25999,UPI,Pending,five,,2022-12-17,2.0
+415,Sneha,35,johngmail.com,Chennai,Mouse,,4999.0,,Debit Card,delivered,10,2,2023-05-26,-1.0
+416,David,NA,kiran@gmail.com,Mumbai,Mouse,1.0,1999.0,1999,Cash,Cancelled,,3,2022-04-20,5.0
+417,Mohit,NA,,Chennai,Mouse,5.0,9999.0,49995,Net Banking,Pending,0,5,2024-07-08,-1.0
+418,Mohit,22,,DELHI,Mouse,4.0,25999.0,103996,Debit Card,Returned,0,,2023-03-10,7.0
+419,Kiran,22,sneha@yahoo.com,Delhi,Tablet,3.0,,,UPI,delivered,10,2,2023-04-17,7.0
+420,Sara,NA,,Bangalore,Headphones,2.0,9999.0,19998,Cash,Pending,15,,2022-09-27,-1.0
+421,Kiran,40,anjaligmail.com,Bangalore,Monitor,3.0,14999.0,44997,credit card,Pending,0,,2023-01-17,3.0
+422,Rahul,,mohitgmail.com,Bangalore,Headphones,2.0,25999.0,51998,upi,Delivered,5,4,2024-04-03,5.0
+423,John,45,,,Mouse,,25999.0,0,Net Banking,Delivered,15,1,2022-05-18,
+424,Anjali,40,anjali@gmail.com,Hyderabad,Tablet,1.0,4999.0,4999,UPI,Cancelled,,5,2022-06-17,-1.0
+425,Kiran,,,Chennai,Monitor,3.0,1999.0,5997,Net Banking,pending,five,5,2022-09-21,2.0
+426,Anjali,45,david@yahoo.com,Delhi,Headphones,3.0,9999.0,29997,Net Banking,Cancelled,15,,2024-03-10,2.0
+427,Priya,,kiran@yahoo.com,Delhi,Mobile,2.0,,unknown,UPI,Pending,10,3,2024-06-08,
+428,Sara,,john@yahoo.com,mumbai ,Monitor,,9999.0,0,Cash,Returned,5,2,2022-10-26,-1.0
+429,Rahul,40,priyagmail.com,Pune,Laptop,2.0,,,Credit Card,Delivered,15,5,2022-01-24,1.0
+430,Kiran,25,,Bangalore,Laptop,4.0,25999.0,103996,credit card,Returned,10,2,2022-01-27,2.0
+431,Amit,30,rahulgmail.com,Mumbai,Keyboard,3.0,14999.0,44997,UPI,Cancelled,15,4,2024-01-26,-1.0
+432,Kiran,NA,rahulgmail.com,mumbai ,Headphones,3.0,25999.0,77997,credit card,pending,five,5,2023-07-08,5.0
+433,David,40,sara@yahoo.com,Chennai,Mouse,,,0,Credit Card,Returned,10,3,2023-06-21,5.0
+434,Sara,22,amitgmail.com,Kolkata,Headphones,2.0,9999.0,19998,Net Banking,Delivered,five,4,2022-09-24,-1.0
+435,Amit,,johngmail.com,,Tablet,3.0,1999.0,5997,Debit Card,Returned,,4,2023-05-04,5.0
+436,John,,mohitgmail.com,Delhi,Headphones,2.0,,0,credit card,Pending,,N/A,2022-09-13,-1.0
+437,Mohit,40,,Chennai,Mouse,5.0,,0,Credit Card,Pending,5,3,2024-07-20,1.0
+438,Sneha,NA,john@yahoo.com,Hyderabad,Laptop,4.0,25999.0,103996,Debit Card,Delivered,,1,2023-10-15,2.0
+439,Amit,40,rahul@yahoo.com,Chennai,Laptop,1.0,9999.0,9999,Debit Card,Delivered,15,2,2024-09-22,3.0
+440,Sara,45,anjali@gmail.com,Delhi,Mouse,3.0,14999.0,44997,upi,Pending,0,3,2023-03-07,-1.0
+441,John,NA,rahulgmail.com,Pune,Mouse,1.0,25999.0,25999,Credit Card,Delivered,five,2,2023-02-06,5.0
+442,Priya,22,sneha@yahoo.com,,Keyboard,4.0,4999.0,19996,Debit Card,Returned,15,,2024-02-29,3.0
+443,John,22,david@gmail.com,Ahmedabad,Keyboard,3.0,4999.0,14997,UPI,Pending,10,1,2024-08-16,-1.0
+444,Amit,35,,Bangalore,Mouse,2.0,1999.0,3998,UPI,delivered,0,4,2023-11-14,-1.0
+445,Sara,NA,kirangmail.com,Delhi,Mobile,1.0,1999.0,1999,Debit Card,Returned,0,,2022-09-06,7.0
+446,Rahul,45,rahul@gmail.com,Ahmedabad,Mobile,,1999.0,,UPI,delivered,five,N/A,2022-12-13,3.0
+447,Rahul,22,,Kolkata,Laptop,4.0,,,Cash,pending,15,5,2024-04-04,3.0
+448,Sara,30,,Ahmedabad,Tablet,,14999.0,,upi,delivered,,2,2023-07-10,1.0
+449,Anjali,40,,Mumbai,Mouse,2.0,14999.0,29998,credit card,delivered,15,,2023-06-28,2.0
+450,Sara,45,kirangmail.com,Delhi,Keyboard,1.0,25999.0,25999,Net Banking,Returned,5,5,2024-06-23,
+451,Sara,40,sara@yahoo.com,Delhi,Laptop,5.0,4999.0,24995,Net Banking,pending,0,1,2023-05-25,-1.0
+452,Anjali,22,sneha@gmail.com,Chennai,Laptop,2.0,4999.0,9998,Credit Card,delivered,five,N/A,2024-08-18,5.0
+453,Sneha,40,,mumbai ,Keyboard,4.0,25999.0,103996,Credit Card,Delivered,5,,2023-11-05,5.0
+454,Sara,22,sara@yahoo.com,Mumbai,Mouse,1.0,14999.0,14999,Net Banking,Cancelled,,1,2024-08-08,
+455,Priya,35,david@gmail.com,Chennai,Monitor,3.0,1999.0,5997,Cash,Pending,5,5,2022-03-14,
+456,Anjali,,,DELHI,Headphones,5.0,,,Credit Card,Pending,5,5,2022-09-12,5.0
+457,David,NA,,Hyderabad,Mouse,3.0,,,UPI,Returned,five,4,2023-06-01,-1.0
+458,Mohit,35,kirangmail.com,,Keyboard,3.0,25999.0,77997,UPI,Cancelled,15,4,2024-01-14,5.0
+459,John,22,davidgmail.com,Mumbai,Tablet,,1999.0,unknown,Debit Card,Pending,10,1,2022-01-01,-1.0
+460,Anjali,30,priya@gmail.com,Hyderabad,Mobile,,9999.0,0,Debit Card,Cancelled,10,5,2024-04-21,2.0
+461,Kiran,25,kiran@yahoo.com,Chennai,Keyboard,3.0,9999.0,29997,Credit Card,pending,10,N/A,2022-08-27,5.0
+462,Amit,25,,mumbai ,Headphones,4.0,,0,Credit Card,Delivered,10,3,2022-06-27,-1.0
+463,Mohit,35,kiran@gmail.com,Mumbai,Tablet,4.0,1999.0,7996,Net Banking,Delivered,10,5,2023-03-21,7.0
+464,Mohit,35,rahul@gmail.com,Ahmedabad,Mouse,3.0,25999.0,77997,Net Banking,delivered,,1,2022-06-03,2.0
+465,Priya,30,,Ahmedabad,Monitor,3.0,14999.0,44997,credit card,Delivered,,4,2023-03-19,3.0
+466,Anjali,,rahulgmail.com,,Mobile,4.0,25999.0,103996,Cash,Returned,five,5,2022-03-29,2.0
+467,John,35,sneha@gmail.com,Pune,Tablet,5.0,,0,credit card,delivered,0,1,2023-07-29,
+468,Sara,45,,mumbai ,Keyboard,4.0,9999.0,39996,Credit Card,Cancelled,5,3,2023-02-28,7.0
+469,Sneha,30,anjali@gmail.com,Chennai,Keyboard,4.0,25999.0,103996,UPI,Pending,five,N/A,2024-04-21,1.0
+470,Sara,30,john@gmail.com,Delhi,Tablet,,1999.0,,Cash,Returned,0,3,2022-04-26,2.0
+471,David,35,,Ahmedabad,Monitor,5.0,4999.0,24995,credit card,Pending,five,,2024-01-28,
+472,Amit,22,johngmail.com,Kolkata,Mobile,4.0,25999.0,103996,upi,pending,,3,2022-01-19,1.0
+473,Priya,,,Mumbai,Tablet,,1999.0,,upi,pending,15,2,2023-04-22,5.0
+474,Rahul,NA,kiran@gmail.com,Chennai,Monitor,,1999.0,unknown,Cash,delivered,five,1,2023-06-05,1.0
+475,Rahul,45,anjali@yahoo.com,Mumbai,Tablet,5.0,9999.0,49995,credit card,Cancelled,10,,2022-09-11,3.0
+476,Amit,22,john@yahoo.com,,Tablet,5.0,9999.0,49995,Debit Card,Pending,10,4,2022-08-30,
+477,Kiran,35,mohitgmail.com,Bangalore,Headphones,1.0,,unknown,UPI,delivered,10,4,2022-05-21,7.0
+478,David,35,,Bangalore,Headphones,2.0,,,upi,Pending,five,5,2022-05-15,2.0
+479,Rahul,25,,Mumbai,Mouse,1.0,25999.0,25999,UPI,Returned,15,3,2022-11-22,5.0
+480,Rahul,30,sneha@gmail.com,Bangalore,Laptop,,,unknown,upi,delivered,,3,2024-02-03,7.0
+481,Sara,35,sneha@gmail.com,Delhi,Keyboard,5.0,4999.0,24995,upi,Returned,5,5,2023-08-04,-1.0
+482,Anjali,45,rahul@yahoo.com,Ahmedabad,Mobile,4.0,,0,Debit Card,Pending,5,1,2023-09-12,5.0
+483,Sneha,,snehagmail.com,Delhi,Mobile,1.0,9999.0,9999,Cash,delivered,15,,2024-02-22,3.0
+484,Kiran,,mohit@gmail.com,Pune,Keyboard,4.0,4999.0,19996,UPI,Returned,,,2024-06-06,7.0
+485,Anjali,22,david@gmail.com,Ahmedabad,Mouse,5.0,25999.0,129995,Credit Card,Pending,,5,2023-09-01,5.0
+486,Sneha,,david@gmail.com,Kolkata,Headphones,1.0,25999.0,25999,Cash,Cancelled,10,4,2024-01-23,2.0
+487,Anjali,22,davidgmail.com,DELHI,Headphones,3.0,25999.0,77997,Credit Card,pending,,1,2023-03-09,2.0
+488,Sara,30,mohit@yahoo.com,Ahmedabad,Laptop,5.0,,0,Debit Card,Returned,,,2024-03-08,2.0
+489,Priya,40,saragmail.com,Delhi,Laptop,4.0,1999.0,7996,credit card,Returned,five,3,2024-06-22,1.0
+490,Amit,30,mohit@yahoo.com,Bangalore,Tablet,,14999.0,0,Net Banking,pending,5,2,2023-06-21,-1.0
+491,Anjali,,,Kolkata,Keyboard,2.0,,,Debit Card,Delivered,5,2,2022-05-29,1.0
+492,David,NA,anjali@yahoo.com,Mumbai,Monitor,3.0,1999.0,5997,Cash,Pending,5,5,2023-09-30,
+493,Sneha,NA,priya@gmail.com,,Tablet,4.0,14999.0,59996,Net Banking,pending,,N/A,2023-05-03,-1.0
+494,Amit,30,,Bangalore,Mouse,1.0,4999.0,4999,Credit Card,pending,,N/A,2022-08-01,7.0
+495,Rahul,22,priya@yahoo.com,Bangalore,Keyboard,3.0,1999.0,5997,UPI,delivered,five,,2022-11-02,
+496,Amit,30,,Delhi,Mouse,5.0,25999.0,129995,UPI,Cancelled,10,4,2023-09-02,-1.0
+497,Rahul,25,john@yahoo.com,Delhi,Keyboard,4.0,25999.0,103996,upi,Cancelled,10,5,2022-03-11,5.0
+498,Anjali,22,priya@gmail.com,mumbai ,Mouse,2.0,,,credit card,Cancelled,15,5,2023-06-22,-1.0
+499,David,45,rahul@yahoo.com,DELHI,Headphones,3.0,25999.0,77997,Cash,Pending,,2,2022-11-21,
+500,Priya,25,amit@yahoo.com,Chennai,Mouse,2.0,1999.0,3998,Net Banking,Returned,15,1,2022-10-25,3.0
+501,John,22,,Delhi,Tablet,5.0,,,UPI,delivered,,3,2022-12-25,-1.0
+502,Rahul,45,mohit@gmail.com,Chennai,Tablet,1.0,,unknown,upi,Cancelled,five,4,2022-01-07,5.0
+503,David,NA,rahul@yahoo.com,Hyderabad,Headphones,1.0,,,upi,Returned,five,1,2024-03-27,-1.0
+504,Sneha,45,david@gmail.com,mumbai ,Keyboard,3.0,25999.0,77997,UPI,Cancelled,0,2,2023-06-18,3.0
+505,Kiran,,davidgmail.com,mumbai ,Headphones,1.0,9999.0,9999,Debit Card,delivered,0,N/A,2024-05-10,-1.0
+506,Priya,22,john@yahoo.com,Ahmedabad,Mobile,3.0,,unknown,UPI,Returned,10,2,2024-02-09,7.0
+507,Priya,45,amitgmail.com,Ahmedabad,Monitor,2.0,1999.0,3998,Credit Card,Returned,,2,2022-11-06,2.0
+508,Priya,40,saragmail.com,,Keyboard,4.0,,0,Debit Card,Pending,five,1,2022-12-15,5.0
+509,Kiran,22,john@gmail.com,Delhi,Tablet,,25999.0,,Cash,Delivered,0,5,2023-02-01,-1.0
+510,Sneha,40,,Chennai,Tablet,,9999.0,,UPI,delivered,10,N/A,2023-11-06,5.0
+511,Priya,30,,Mumbai,Monitor,1.0,9999.0,9999,Net Banking,delivered,0,2,2023-11-19,7.0
+512,Kiran,40,,Chennai,Mobile,5.0,9999.0,49995,Credit Card,Cancelled,,3,2022-12-25,7.0
+513,Priya,22,anjali@gmail.com,Pune,Laptop,1.0,4999.0,4999,Credit Card,Returned,15,2,2023-03-31,
+514,John,NA,,Hyderabad,Mouse,5.0,,0,Debit Card,pending,five,N/A,2023-09-03,7.0
+515,Priya,30,priya@yahoo.com,Ahmedabad,Tablet,4.0,25999.0,103996,credit card,pending,five,N/A,2022-03-22,5.0
+516,Sara,30,,Pune,Mobile,2.0,4999.0,9998,credit card,pending,10,N/A,2023-04-27,-1.0
+517,Anjali,NA,amit@gmail.com,Delhi,Tablet,3.0,14999.0,44997,Cash,Returned,5,3,2024-06-22,-1.0
+518,Mohit,30,david@gmail.com,Delhi,Tablet,5.0,25999.0,129995,Net Banking,pending,0,N/A,2022-12-23,3.0
+519,David,,snehagmail.com,Bangalore,Headphones,4.0,14999.0,59996,Cash,Delivered,10,2,2023-06-30,-1.0
+520,David,,,Chennai,Mobile,5.0,14999.0,74995,credit card,pending,0,,2023-12-12,
+521,Anjali,NA,sara@gmail.com,Bangalore,Tablet,4.0,1999.0,7996,Cash,Delivered,,1,2023-08-11,
+522,Priya,45,anjali@gmail.com,Chennai,Mouse,5.0,14999.0,74995,Debit Card,delivered,five,N/A,2024-04-13,1.0
+523,Mohit,NA,,mumbai ,Monitor,2.0,,,Cash,Pending,5,,2024-02-15,3.0
+524,Kiran,,sara@gmail.com,Mumbai,Monitor,5.0,,unknown,Net Banking,Returned,5,N/A,2022-11-03,3.0
+525,Priya,22,,Kolkata,Mouse,3.0,25999.0,77997,Credit Card,Pending,15,,2022-03-05,7.0
+526,Mohit,,mohit@yahoo.com,,Mobile,,9999.0,0,credit card,Pending,15,2,2023-02-08,2.0
+527,Rahul,,,Bangalore,Laptop,4.0,9999.0,39996,Credit Card,pending,0,2,2023-07-23,
+528,Mohit,30,priyagmail.com,Ahmedabad,Mouse,4.0,,unknown,credit card,delivered,15,5,2024-06-25,2.0
+529,Sneha,NA,,Bangalore,Headphones,5.0,14999.0,74995,Net Banking,Delivered,,4,2023-04-11,-1.0
+530,Amit,40,,Mumbai,Monitor,2.0,,0,Cash,pending,10,1,2024-01-19,7.0
+531,David,40,anjali@gmail.com,mumbai ,Laptop,,1999.0,,Debit Card,Returned,five,,2023-05-09,
+532,Sara,40,kiran@gmail.com,,Mouse,,1999.0,0,Credit Card,Returned,15,5,2024-09-10,5.0
+533,Rahul,45,,Mumbai,Keyboard,,9999.0,unknown,Net Banking,pending,10,,2023-08-11,-1.0
+534,Kiran,NA,kirangmail.com,Mumbai,Keyboard,3.0,1999.0,5997,UPI,pending,,1,2023-08-01,3.0
+535,Rahul,25,,mumbai ,Tablet,1.0,4999.0,4999,UPI,Cancelled,0,,2023-05-12,1.0
+536,Rahul,30,,Kolkata,Mouse,2.0,25999.0,51998,credit card,Pending,15,2,2023-09-11,-1.0
+537,Anjali,25,rahulgmail.com,Pune,Mouse,1.0,9999.0,9999,Cash,Pending,five,4,2023-06-25,
+538,Priya,45,,Mumbai,Mobile,2.0,4999.0,9998,Cash,Returned,15,3,2023-10-15,5.0
+539,John,,mohit@yahoo.com,Bangalore,Monitor,5.0,4999.0,24995,upi,Returned,0,3,2024-02-04,-1.0
+540,Mohit,22,,mumbai ,Keyboard,4.0,,unknown,upi,Cancelled,10,3,2023-04-05,3.0
+541,Kiran,,anjaligmail.com,Chennai,Monitor,1.0,9999.0,9999,UPI,pending,five,2,2024-04-01,3.0
+542,Priya,25,amit@yahoo.com,,Laptop,1.0,,,credit card,Returned,10,2,2023-07-15,
+543,Amit,22,amit@gmail.com,mumbai ,Keyboard,3.0,4999.0,14997,upi,Pending,,,2022-10-18,1.0
+544,Priya,30,mohitgmail.com,Bangalore,Tablet,1.0,1999.0,1999,UPI,Returned,five,1,2023-12-27,
+545,Priya,45,johngmail.com,Kolkata,Mouse,3.0,14999.0,44997,Credit Card,Returned,15,3,2023-04-10,1.0
+546,Sneha,NA,priya@yahoo.com,mumbai ,Headphones,3.0,4999.0,14997,Debit Card,pending,15,1,2022-09-22,2.0
+547,Priya,25,,Mumbai,Laptop,4.0,4999.0,19996,Credit Card,delivered,five,3,2023-07-08,-1.0
+548,Mohit,30,amit@gmail.com,Kolkata,Mobile,1.0,14999.0,14999,credit card,Cancelled,15,5,2023-04-02,1.0
+549,David,,mohit@gmail.com,Chennai,Laptop,,14999.0,unknown,Cash,pending,15,1,2023-06-12,7.0
+550,Priya,40,mohit@gmail.com,Hyderabad,Monitor,3.0,9999.0,29997,upi,Cancelled,0,N/A,2023-07-03,5.0
+551,Mohit,30,david@gmail.com,DELHI,Mobile,3.0,,,UPI,pending,15,1,2024-02-18,
+552,Rahul,25,anjaligmail.com,Mumbai,Mobile,3.0,14999.0,44997,Credit Card,pending,,2,2023-12-07,5.0
+553,Amit,40,anjali@yahoo.com,Mumbai,Tablet,1.0,25999.0,25999,Credit Card,Cancelled,five,1,2023-02-03,5.0
+554,Kiran,NA,davidgmail.com,Chennai,Laptop,2.0,,0,Credit Card,pending,5,4,2022-05-02,
+555,Amit,22,snehagmail.com,Bangalore,Keyboard,4.0,25999.0,103996,Credit Card,Cancelled,0,4,2022-01-20,7.0
+556,Kiran,25,priya@yahoo.com,mumbai ,Mobile,5.0,1999.0,9995,Credit Card,Pending,15,3,2022-06-24,-1.0
+557,Sara,45,priyagmail.com,Chennai,Mouse,,,unknown,Credit Card,delivered,5,3,2024-05-05,1.0
+558,David,,,Bangalore,Headphones,3.0,4999.0,14997,Debit Card,delivered,0,2,2022-05-04,1.0
+559,Priya,30,amit@yahoo.com,Mumbai,Laptop,,25999.0,unknown,Debit Card,Delivered,five,,2024-03-21,7.0
+560,Rahul,NA,rahulgmail.com,DELHI,Tablet,3.0,14999.0,44997,Net Banking,Returned,15,2,2024-06-27,2.0
+561,John,30,anjali@gmail.com,Hyderabad,Headphones,,1999.0,0,Credit Card,delivered,5,2,2023-09-18,1.0
+562,Anjali,45,davidgmail.com,DELHI,Keyboard,1.0,25999.0,25999,Debit Card,Cancelled,0,2,2023-06-27,1.0
+563,Amit,NA,rahulgmail.com,Mumbai,Keyboard,2.0,,unknown,UPI,Cancelled,5,4,2024-03-26,3.0
+564,David,22,priya@gmail.com,Bangalore,Mobile,5.0,14999.0,74995,upi,Delivered,15,5,2022-12-09,1.0
+565,Sara,45,mohitgmail.com,Chennai,Mouse,2.0,,unknown,Credit Card,Cancelled,5,1,2022-03-14,2.0
+566,Anjali,,sneha@gmail.com,mumbai ,Headphones,4.0,4999.0,19996,Credit Card,Returned,5,2,2024-01-26,7.0
+567,Sneha,45,rahul@yahoo.com,DELHI,Tablet,2.0,14999.0,29998,UPI,Pending,10,2,2023-04-11,1.0
+568,Anjali,40,rahul@gmail.com,Ahmedabad,Headphones,5.0,1999.0,9995,Debit Card,Cancelled,5,3,2023-12-10,7.0
+569,David,35,priya@yahoo.com,Ahmedabad,Mouse,,25999.0,,Debit Card,delivered,15,N/A,2022-06-10,5.0
+570,Mohit,35,,mumbai ,Mobile,1.0,,unknown,Net Banking,Pending,,1,2022-10-13,5.0
+571,Anjali,22,mohit@yahoo.com,Delhi,Headphones,1.0,14999.0,14999,Cash,Pending,0,5,2022-02-15,-1.0
+572,John,35,,Chennai,Keyboard,,,unknown,Credit Card,Delivered,15,,2022-01-13,3.0
+573,Rahul,22,anjali@yahoo.com,Pune,Mobile,,14999.0,0,upi,Cancelled,five,4,2022-06-15,
+574,John,,sara@gmail.com,Pune,Mouse,1.0,,,UPI,pending,,5,2023-10-11,7.0
+575,Amit,45,,Delhi,Headphones,2.0,,,UPI,Returned,,1,2024-03-24,3.0
+576,Rahul,25,davidgmail.com,Hyderabad,Mobile,2.0,,0,Net Banking,Delivered,five,4,2023-01-11,
+577,John,35,,,Keyboard,5.0,,,Cash,Cancelled,0,1,2024-08-19,3.0
+578,Anjali,25,,mumbai ,Tablet,4.0,14999.0,59996,upi,pending,five,N/A,2022-12-20,1.0
+579,John,25,mohitgmail.com,Delhi,Laptop,4.0,1999.0,7996,Debit Card,Cancelled,0,,2022-07-12,2.0
+580,David,22,john@yahoo.com,Bangalore,Headphones,2.0,4999.0,9998,UPI,Returned,15,,2023-05-24,
+581,David,25,amitgmail.com,DELHI,Tablet,3.0,4999.0,14997,Cash,delivered,10,,2022-01-22,
+582,Kiran,NA,,Bangalore,Mouse,3.0,14999.0,44997,UPI,Pending,10,2,2024-03-16,5.0
+583,Anjali,30,,Bangalore,Monitor,3.0,1999.0,5997,Debit Card,pending,,3,2023-01-16,2.0
+584,Priya,30,rahulgmail.com,Mumbai,Tablet,2.0,,0,Net Banking,Pending,15,3,2024-09-23,3.0
+585,Rahul,22,,Hyderabad,Headphones,2.0,25999.0,51998,Net Banking,Pending,,3,2022-07-08,1.0
+586,Sara,NA,rahul@yahoo.com,Bangalore,Laptop,1.0,14999.0,14999,credit card,delivered,,3,2024-07-31,
+587,Kiran,40,kirangmail.com,Ahmedabad,Tablet,3.0,14999.0,44997,credit card,Delivered,five,4,2023-12-24,1.0
+588,Kiran,40,amit@yahoo.com,Chennai,Headphones,,25999.0,,UPI,Delivered,10,1,2022-05-23,7.0
+589,Amit,35,johngmail.com,Delhi,Monitor,2.0,25999.0,51998,upi,Returned,five,,2023-10-19,1.0
+590,Kiran,35,,mumbai ,Monitor,5.0,14999.0,74995,Credit Card,pending,10,4,2024-09-26,2.0
+591,John,,sara@gmail.com,Hyderabad,Tablet,4.0,9999.0,39996,UPI,Returned,,1,2024-01-04,2.0
+592,Mohit,NA,johngmail.com,Pune,Mobile,4.0,,unknown,upi,delivered,,1,2024-01-16,2.0
+593,Priya,45,priya@yahoo.com,Mumbai,Headphones,3.0,14999.0,44997,credit card,Cancelled,15,2,2022-08-01,7.0
+594,John,35,rahul@yahoo.com,,Headphones,,25999.0,,Credit Card,Cancelled,,3,2023-04-19,5.0
+595,John,22,amitgmail.com,Kolkata,Keyboard,,14999.0,,upi,pending,15,1,2023-07-27,
+596,Amit,30,anjaligmail.com,Delhi,Mouse,3.0,14999.0,44997,UPI,Returned,0,5,2023-11-13,
+597,Priya,,john@yahoo.com,Hyderabad,Monitor,5.0,14999.0,74995,credit card,delivered,0,N/A,2023-01-06,3.0
+598,Rahul,30,sara@yahoo.com,Hyderabad,Mobile,5.0,1999.0,9995,Credit Card,Cancelled,10,4,2022-06-16,
+599,David,40,john@gmail.com,Chennai,Mouse,3.0,1999.0,5997,credit card,Pending,0,5,2024-07-22,-1.0
+600,Sara,45,,Delhi,Monitor,5.0,9999.0,49995,Net Banking,Cancelled,5,1,2022-06-21,2.0
+601,Rahul,NA,,Delhi,Mobile,3.0,9999.0,29997,Debit Card,delivered,5,N/A,2023-06-15,2.0
+602,Priya,25,mohit@yahoo.com,Delhi,Mouse,5.0,25999.0,129995,Debit Card,Delivered,15,3,2024-03-25,3.0
+603,Rahul,NA,,Kolkata,Laptop,3.0,4999.0,14997,credit card,Delivered,5,2,2023-12-09,-1.0
+604,Rahul,40,rahulgmail.com,Delhi,Headphones,2.0,,,credit card,Delivered,0,1,2023-12-12,-1.0
+605,David,35,priya@gmail.com,mumbai ,Laptop,4.0,1999.0,7996,Cash,Delivered,10,1,2023-05-11,1.0
+606,Kiran,25,kirangmail.com,Chennai,Mobile,,1999.0,,credit card,Cancelled,0,1,2022-11-05,2.0
+607,David,45,saragmail.com,mumbai ,Mobile,,9999.0,0,Net Banking,delivered,0,1,2024-05-16,-1.0
+608,Rahul,35,,,Laptop,1.0,25999.0,25999,credit card,Delivered,5,5,2023-08-16,-1.0
+609,Rahul,30,anjali@gmail.com,Hyderabad,Headphones,4.0,9999.0,39996,Cash,Pending,,2,2023-12-26,5.0
+610,Anjali,NA,priyagmail.com,Hyderabad,Keyboard,3.0,1999.0,5997,UPI,delivered,five,1,2022-04-26,1.0
+611,Kiran,,john@yahoo.com,Kolkata,Keyboard,4.0,1999.0,7996,upi,Returned,5,5,2022-12-02,5.0
+612,Rahul,25,,Mumbai,Keyboard,4.0,4999.0,19996,Cash,pending,0,4,2022-10-25,5.0
+613,Mohit,25,rahul@yahoo.com,mumbai ,Laptop,,,,credit card,Pending,0,3,2023-06-20,2.0
+614,Mohit,,priyagmail.com,Ahmedabad,Tablet,2.0,25999.0,51998,upi,pending,,5,2022-12-13,3.0
+615,Anjali,NA,kiran@yahoo.com,,Tablet,,14999.0,unknown,Debit Card,Returned,0,1,2024-02-14,3.0
+616,Amit,30,amit@gmail.com,Delhi,Headphones,4.0,4999.0,19996,credit card,Delivered,5,4,2023-05-17,7.0
+617,Priya,40,kiran@gmail.com,DELHI,Mouse,3.0,4999.0,14997,Net Banking,Returned,15,2,2023-11-27,3.0
+618,David,40,,,Laptop,4.0,14999.0,59996,upi,Delivered,15,1,2023-11-09,5.0
+619,Amit,NA,anjali@gmail.com,Bangalore,Monitor,3.0,14999.0,44997,credit card,Cancelled,five,2,2023-04-06,5.0
+620,Kiran,,anjali@gmail.com,DELHI,Headphones,2.0,9999.0,19998,credit card,delivered,five,5,2023-03-18,7.0
+621,Mohit,30,david@gmail.com,Kolkata,Headphones,4.0,25999.0,103996,Net Banking,Returned,,,2023-04-27,3.0
+622,Rahul,22,amit@gmail.com,Hyderabad,Tablet,3.0,9999.0,29997,upi,pending,,1,2024-02-24,-1.0
+623,Sara,25,,Pune,Tablet,,9999.0,unknown,Credit Card,pending,5,2,2024-07-01,2.0
+624,Priya,25,,Hyderabad,Mobile,3.0,25999.0,77997,Credit Card,delivered,10,1,2023-10-26,5.0
+625,Anjali,,john@gmail.com,mumbai ,Laptop,4.0,25999.0,103996,UPI,Returned,,4,2023-11-05,3.0
+626,Anjali,25,,,Mouse,1.0,14999.0,14999,upi,pending,10,2,2023-08-10,7.0
+627,David,35,anjali@gmail.com,Chennai,Tablet,3.0,14999.0,44997,UPI,Delivered,10,5,2022-11-03,5.0
+628,Kiran,25,kiran@gmail.com,Hyderabad,Tablet,2.0,25999.0,51998,Credit Card,delivered,,4,2024-04-03,5.0
+629,Mohit,40,,DELHI,Monitor,3.0,1999.0,5997,UPI,Pending,15,4,2022-08-03,3.0
+630,Kiran,30,amitgmail.com,Ahmedabad,Mobile,5.0,14999.0,74995,credit card,pending,15,3,2023-10-02,
+631,Sara,22,davidgmail.com,Ahmedabad,Mobile,5.0,14999.0,74995,Debit Card,Pending,five,,2023-06-30,-1.0
+632,Mohit,45,priyagmail.com,Kolkata,Mouse,4.0,14999.0,59996,UPI,pending,5,3,2022-11-04,
+633,Sneha,35,priyagmail.com,Mumbai,Mobile,2.0,14999.0,29998,upi,Cancelled,15,4,2023-09-08,7.0
+634,Rahul,35,,Mumbai,Tablet,4.0,,,upi,Cancelled,five,5,2023-03-23,2.0
+635,Sara,22,amit@gmail.com,mumbai ,Tablet,1.0,,unknown,upi,Delivered,15,3,2023-10-22,
+636,Kiran,30,sneha@gmail.com,,Laptop,1.0,14999.0,14999,Net Banking,pending,,N/A,2023-11-05,7.0
+637,Sara,35,kiran@gmail.com,Hyderabad,Mouse,4.0,1999.0,7996,Net Banking,pending,15,N/A,2022-09-15,
+638,Rahul,35,rahul@gmail.com,Chennai,Tablet,2.0,14999.0,29998,Cash,Returned,10,N/A,2024-02-01,7.0
+639,David,45,,Pune,Headphones,4.0,25999.0,103996,credit card,Pending,10,N/A,2022-02-27,2.0
+640,Amit,40,amit@gmail.com,DELHI,Mobile,4.0,,unknown,UPI,delivered,15,3,2023-01-07,
+641,Anjali,25,davidgmail.com,Pune,Laptop,,9999.0,0,Cash,Cancelled,10,1,2024-09-08,-1.0
+642,Sara,35,rahul@yahoo.com,DELHI,Headphones,2.0,9999.0,19998,upi,Delivered,10,N/A,2024-02-14,1.0
+643,Priya,,sara@yahoo.com,Bangalore,Keyboard,4.0,14999.0,59996,UPI,delivered,0,3,2024-04-22,5.0
+644,Amit,45,anjali@gmail.com,DELHI,Keyboard,,25999.0,0,Debit Card,pending,15,N/A,2023-09-09,
+645,Kiran,35,,Delhi,Laptop,1.0,14999.0,14999,Debit Card,Pending,,,2022-05-20,-1.0
+646,Anjali,,sara@yahoo.com,Bangalore,Tablet,,4999.0,0,Debit Card,pending,,N/A,2024-04-30,3.0
+647,Rahul,25,,Pune,Headphones,3.0,4999.0,14997,upi,delivered,5,1,2024-03-29,1.0
+648,Sneha,35,priya@yahoo.com,Kolkata,Keyboard,5.0,,0,upi,Pending,0,4,2024-08-03,7.0
+649,Rahul,30,,mumbai ,Laptop,5.0,9999.0,49995,Credit Card,pending,,4,2023-03-16,-1.0
+650,Sneha,25,snehagmail.com,Kolkata,Tablet,4.0,,unknown,credit card,Returned,15,2,2024-07-31,5.0
+651,Mohit,35,johngmail.com,Bangalore,Headphones,2.0,25999.0,51998,upi,Pending,0,3,2024-05-26,3.0
+652,Priya,35,sara@yahoo.com,Mumbai,Headphones,5.0,14999.0,74995,Debit Card,Cancelled,five,4,2022-08-30,
+653,Priya,,,Delhi,Monitor,,14999.0,0,Credit Card,Delivered,10,2,2022-08-06,5.0
+654,David,22,,mumbai ,Headphones,3.0,25999.0,77997,UPI,Returned,five,3,2024-07-19,2.0
+655,David,30,johngmail.com,Ahmedabad,Tablet,5.0,1999.0,9995,Cash,Pending,0,3,2024-09-18,
+656,Amit,40,,Bangalore,Headphones,4.0,4999.0,19996,upi,Cancelled,five,3,2023-06-28,5.0
+657,Mohit,40,,Bangalore,Tablet,3.0,25999.0,77997,credit card,Returned,5,5,2022-10-17,-1.0
+658,Amit,22,snehagmail.com,Chennai,Mobile,,,unknown,Credit Card,Returned,10,2,2024-08-03,
+659,Sara,NA,amit@yahoo.com,,Headphones,4.0,1999.0,7996,Cash,Returned,0,N/A,2023-04-24,
+660,John,45,priyagmail.com,Bangalore,Mouse,2.0,1999.0,3998,Debit Card,pending,,N/A,2024-06-06,3.0
+661,Mohit,22,davidgmail.com,Delhi,Mobile,,25999.0,,upi,Returned,five,1,2023-07-31,3.0
+662,Kiran,25,,Delhi,Mouse,3.0,,0,UPI,Pending,0,1,2022-01-27,5.0
+663,Sara,NA,john@gmail.com,Mumbai,Keyboard,,,unknown,Net Banking,Returned,10,,2024-04-30,
+664,Sara,35,,Mumbai,Keyboard,5.0,4999.0,24995,Credit Card,delivered,,4,2024-07-17,1.0
+665,Amit,35,mohit@gmail.com,Chennai,Mobile,3.0,4999.0,14997,Cash,Returned,10,,2023-02-13,-1.0
+666,John,40,anjali@yahoo.com,DELHI,Monitor,,4999.0,,Debit Card,Cancelled,five,1,2024-09-04,-1.0
+667,Anjali,NA,anjali@yahoo.com,Kolkata,Monitor,5.0,4999.0,24995,Net Banking,Returned,0,N/A,2023-01-12,5.0
+668,Priya,30,mohit@yahoo.com,Mumbai,Monitor,3.0,25999.0,77997,UPI,Returned,five,2,2024-04-10,
+669,Mohit,25,john@yahoo.com,Delhi,Mouse,,4999.0,unknown,Cash,Cancelled,5,2,2023-12-04,
+670,David,,john@gmail.com,Delhi,Laptop,3.0,4999.0,14997,Net Banking,Delivered,,4,2024-07-13,5.0
+671,Kiran,40,,Delhi,Mouse,4.0,,0,Net Banking,Delivered,0,,2022-04-07,
+672,Mohit,,amit@gmail.com,Kolkata,Tablet,2.0,4999.0,9998,Net Banking,pending,15,N/A,2023-04-19,
+673,Rahul,45,rahulgmail.com,Delhi,Keyboard,5.0,9999.0,49995,Net Banking,Cancelled,five,1,2023-04-06,5.0
+674,Rahul,,priya@gmail.com,DELHI,Headphones,1.0,1999.0,1999,Cash,pending,15,N/A,2023-07-02,
+675,Mohit,NA,,Kolkata,Laptop,,25999.0,0,Debit Card,Pending,0,2,2024-09-15,1.0
+676,Rahul,22,sneha@yahoo.com,DELHI,Mobile,1.0,,,Cash,pending,,2,2024-04-15,1.0
+677,Priya,NA,mohit@gmail.com,Bangalore,Mobile,4.0,4999.0,19996,credit card,pending,15,4,2022-11-05,5.0
+678,Kiran,35,,Pune,Laptop,4.0,25999.0,103996,UPI,Delivered,0,,2022-01-21,-1.0
+679,Amit,NA,,Ahmedabad,Headphones,4.0,14999.0,59996,Cash,delivered,,,2024-01-01,7.0
+680,Mohit,22,david@gmail.com,mumbai ,Tablet,,14999.0,,Net Banking,Delivered,10,,2024-08-15,5.0
+681,Anjali,NA,,Pune,Laptop,4.0,1999.0,7996,Debit Card,Cancelled,five,2,2024-06-29,5.0
+682,Kiran,35,,DELHI,Headphones,4.0,4999.0,19996,Debit Card,Cancelled,five,,2022-12-19,5.0
+683,Kiran,45,anjaligmail.com,Chennai,Tablet,4.0,,0,credit card,pending,0,,2024-09-09,5.0
+684,Priya,30,kiran@yahoo.com,Pune,Headphones,2.0,4999.0,9998,UPI,Pending,5,5,2022-05-13,1.0
+685,David,45,rahulgmail.com,Mumbai,Mouse,3.0,9999.0,29997,Credit Card,Cancelled,15,1,2022-01-19,7.0
+686,Sara,35,,Hyderabad,Mouse,1.0,25999.0,25999,Credit Card,delivered,10,2,2022-08-21,-1.0
+687,Anjali,25,amit@yahoo.com,Delhi,Laptop,5.0,25999.0,129995,upi,delivered,,N/A,2023-12-08,-1.0
+688,Rahul,22,david@gmail.com,DELHI,Laptop,1.0,25999.0,25999,upi,Pending,10,2,2024-08-28,
+689,Sara,NA,priyagmail.com,Hyderabad,Mouse,,14999.0,0,Debit Card,Delivered,5,4,2022-10-27,5.0
+690,David,NA,,Bangalore,Laptop,1.0,4999.0,4999,UPI,Cancelled,five,N/A,2024-02-27,5.0
+691,Sneha,30,david@yahoo.com,Bangalore,Mouse,,,,Cash,Returned,15,4,2023-01-05,-1.0
+692,David,NA,rahul@gmail.com,Delhi,Laptop,,9999.0,,UPI,Cancelled,15,N/A,2023-06-13,2.0
+693,David,22,rahul@gmail.com,Kolkata,Headphones,1.0,14999.0,14999,Cash,pending,five,5,2023-03-21,-1.0
+694,David,45,,mumbai ,Mobile,,,unknown,credit card,Returned,15,,2022-11-08,2.0
+695,Sneha,NA,sara@yahoo.com,Kolkata,Laptop,5.0,25999.0,129995,Credit Card,delivered,10,4,2024-06-27,
+696,David,40,sneha@gmail.com,,Tablet,,4999.0,0,Net Banking,Cancelled,five,2,2024-01-07,1.0
+697,Mohit,40,,,Laptop,5.0,25999.0,129995,credit card,Delivered,10,3,2022-01-29,
+698,John,22,priya@yahoo.com,mumbai ,Keyboard,3.0,1999.0,5997,Credit Card,Returned,10,2,2023-06-04,-1.0
+699,John,35,,DELHI,Mouse,5.0,25999.0,129995,upi,pending,,,2024-02-03,2.0
+700,David,35,,mumbai ,Mobile,4.0,25999.0,103996,upi,Cancelled,15,1,2024-01-02,2.0
+701,Mohit,25,priya@gmail.com,Bangalore,Headphones,4.0,14999.0,59996,Debit Card,Returned,0,3,2023-12-30,
+702,Mohit,,john@yahoo.com,Ahmedabad,Keyboard,4.0,25999.0,103996,Cash,pending,15,N/A,2023-06-23,2.0
+703,David,NA,anjaligmail.com,,Laptop,5.0,4999.0,24995,credit card,Pending,15,4,2022-05-28,1.0
+704,Priya,45,priya@yahoo.com,Delhi,Tablet,2.0,25999.0,51998,Net Banking,Cancelled,0,5,2024-02-04,2.0
+705,Anjali,45,,Mumbai,Mouse,3.0,9999.0,29997,Debit Card,Pending,,4,2022-05-01,1.0
+706,Amit,35,rahul@yahoo.com,Delhi,Monitor,3.0,9999.0,29997,UPI,Delivered,0,4,2024-08-17,5.0
+707,Anjali,NA,sara@yahoo.com,mumbai ,Mobile,3.0,25999.0,77997,upi,Pending,,,2023-08-10,5.0
+708,Kiran,30,sara@gmail.com,DELHI,Monitor,4.0,,unknown,Cash,Returned,5,4,2024-02-19,3.0
+709,Amit,40,priyagmail.com,mumbai ,Keyboard,1.0,,unknown,upi,pending,10,5,2023-07-08,
+710,Kiran,35,kiran@gmail.com,,Mobile,,25999.0,,upi,Returned,,1,2022-05-07,1.0
+711,Sneha,22,johngmail.com,mumbai ,Headphones,5.0,4999.0,24995,Credit Card,delivered,,3,2023-11-06,5.0
+712,Rahul,22,sara@yahoo.com,Pune,Laptop,1.0,14999.0,14999,upi,delivered,10,4,2023-08-27,3.0
+713,Rahul,30,johngmail.com,Kolkata,Mouse,1.0,1999.0,1999,Credit Card,Pending,10,4,2022-04-04,
+714,Amit,45,rahul@gmail.com,Kolkata,Headphones,1.0,25999.0,25999,Credit Card,Cancelled,5,4,2022-06-23,3.0
+715,Kiran,22,snehagmail.com,mumbai ,Mobile,4.0,1999.0,7996,Cash,delivered,,4,2022-09-22,1.0
+716,Priya,NA,david@yahoo.com,Ahmedabad,Laptop,1.0,9999.0,9999,Cash,pending,5,1,2022-10-03,3.0
+717,John,35,davidgmail.com,mumbai ,Headphones,5.0,,,Cash,Delivered,five,5,2023-07-22,2.0
+718,David,30,sneha@yahoo.com,Ahmedabad,Laptop,2.0,9999.0,19998,Credit Card,Returned,,3,2024-03-12,
+719,Kiran,22,,Kolkata,Mouse,2.0,1999.0,3998,credit card,Returned,10,N/A,2024-09-22,
+720,David,40,amitgmail.com,mumbai ,Laptop,5.0,25999.0,129995,UPI,Delivered,15,,2022-08-06,1.0
+721,Kiran,40,mohitgmail.com,,Mouse,2.0,,0,UPI,pending,10,,2024-04-30,3.0
+722,Sneha,35,,Ahmedabad,Monitor,,14999.0,unknown,UPI,Delivered,five,2,2024-02-10,
+723,Rahul,NA,amit@gmail.com,Pune,Monitor,1.0,25999.0,25999,credit card,pending,15,N/A,2024-08-02,5.0
+724,Anjali,25,david@gmail.com,DELHI,Laptop,1.0,,0,UPI,Returned,,3,2023-07-06,5.0
+725,Anjali,NA,saragmail.com,Mumbai,Mobile,,1999.0,,credit card,Delivered,10,,2022-07-01,
+726,Anjali,40,snehagmail.com,Hyderabad,Laptop,2.0,1999.0,3998,UPI,Returned,five,,2023-01-02,7.0
+727,Kiran,,,,Headphones,1.0,4999.0,4999,Debit Card,delivered,5,,2022-08-03,
+728,Priya,30,priyagmail.com,Bangalore,Tablet,,,0,Net Banking,Pending,,,2023-08-03,-1.0
+729,Amit,40,david@yahoo.com,Pune,Keyboard,2.0,,,credit card,pending,0,N/A,2022-10-08,3.0
+730,Anjali,25,david@yahoo.com,Hyderabad,Monitor,4.0,9999.0,39996,upi,Delivered,five,2,2023-03-19,1.0
+731,Mohit,NA,sara@gmail.com,Chennai,Tablet,4.0,25999.0,103996,Credit Card,delivered,0,,2022-10-12,2.0
+732,Sara,35,snehagmail.com,Kolkata,Laptop,4.0,1999.0,7996,credit card,pending,0,1,2023-12-08,5.0
+733,Priya,45,johngmail.com,Ahmedabad,Mobile,1.0,25999.0,25999,UPI,Delivered,10,5,2023-03-19,-1.0
+734,Kiran,NA,priya@yahoo.com,Delhi,Laptop,1.0,25999.0,25999,Credit Card,Delivered,15,3,2022-08-31,-1.0
+735,John,22,anjali@gmail.com,mumbai ,Keyboard,1.0,4999.0,4999,Cash,Delivered,0,,2023-12-12,1.0
+736,Kiran,,mohit@gmail.com,Pune,Mobile,1.0,9999.0,9999,upi,delivered,five,5,2023-07-27,1.0
+737,Sara,,kiran@gmail.com,DELHI,Keyboard,4.0,14999.0,59996,upi,Delivered,15,5,2023-04-10,3.0
+738,Kiran,25,amit@gmail.com,Chennai,Monitor,2.0,1999.0,3998,Debit Card,pending,,3,2023-08-25,3.0
+739,Rahul,NA,rahulgmail.com,Mumbai,Laptop,4.0,,0,Debit Card,Cancelled,,4,2023-03-08,7.0
+740,John,30,rahul@yahoo.com,mumbai ,Tablet,,9999.0,unknown,UPI,Cancelled,0,5,2024-09-09,7.0
+741,Mohit,35,david@gmail.com,Hyderabad,Mobile,,4999.0,,Debit Card,pending,5,N/A,2023-11-05,1.0
+742,Kiran,NA,,mumbai ,Tablet,2.0,,unknown,Net Banking,Cancelled,15,3,2022-12-16,2.0
+743,Sneha,NA,sneha@gmail.com,Chennai,Headphones,4.0,1999.0,7996,Net Banking,Pending,5,4,2022-04-18,
+744,Amit,35,mohitgmail.com,Hyderabad,Laptop,3.0,,unknown,Credit Card,Cancelled,0,5,2024-02-26,1.0
+745,Amit,35,,Mumbai,Mobile,3.0,14999.0,44997,Debit Card,Cancelled,5,2,2022-05-26,3.0
+746,Amit,35,rahulgmail.com,Bangalore,Mouse,2.0,9999.0,19998,UPI,Delivered,0,N/A,2024-01-07,
+747,Anjali,45,,Chennai,Tablet,4.0,,,upi,Cancelled,five,2,2022-05-21,7.0
+748,Rahul,25,priyagmail.com,Chennai,Mobile,5.0,14999.0,74995,Net Banking,Returned,five,3,2024-09-27,3.0
+749,David,22,kirangmail.com,Kolkata,Mouse,4.0,,,Debit Card,Cancelled,5,1,2023-09-06,
+750,Anjali,NA,sneha@gmail.com,DELHI,Monitor,3.0,4999.0,14997,Credit Card,Pending,,4,2024-03-25,-1.0
+751,Rahul,NA,david@yahoo.com,Hyderabad,Keyboard,,25999.0,unknown,UPI,delivered,five,4,2024-06-22,
+752,Kiran,40,kiran@yahoo.com,DELHI,Laptop,4.0,14999.0,59996,Debit Card,Pending,5,4,2024-09-05,-1.0
+753,Kiran,40,mohit@yahoo.com,Bangalore,Mouse,4.0,4999.0,19996,UPI,Cancelled,,1,2022-08-29,2.0
+754,Sneha,NA,,mumbai ,Laptop,1.0,9999.0,9999,Cash,delivered,,3,2024-02-09,5.0
+755,Sara,,sara@yahoo.com,Kolkata,Headphones,4.0,14999.0,59996,Credit Card,Pending,15,2,2023-04-07,3.0
+756,John,25,john@gmail.com,Chennai,Laptop,1.0,9999.0,9999,Credit Card,Delivered,10,1,2023-10-23,7.0
+757,John,45,,Chennai,Keyboard,3.0,4999.0,14997,Net Banking,Pending,five,,2022-07-25,7.0
+758,Mohit,40,,Pune,Mouse,3.0,1999.0,5997,Net Banking,pending,0,4,2024-07-23,
+759,Anjali,35,snehagmail.com,Chennai,Monitor,2.0,14999.0,29998,Net Banking,delivered,15,,2023-06-09,-1.0
+760,Mohit,45,sneha@yahoo.com,Chennai,Headphones,3.0,1999.0,5997,Cash,delivered,0,3,2023-04-18,2.0
+761,Sara,22,,Chennai,Headphones,2.0,9999.0,19998,Cash,pending,15,N/A,2023-08-15,-1.0
+762,Kiran,45,kiran@gmail.com,Mumbai,Mobile,5.0,9999.0,49995,Debit Card,Cancelled,,,2023-12-09,-1.0
+763,Mohit,,mohitgmail.com,Delhi,Monitor,5.0,25999.0,129995,Cash,Pending,15,1,2023-09-10,3.0
+764,David,25,rahul@gmail.com,Bangalore,Laptop,4.0,,unknown,upi,pending,,4,2023-08-07,1.0
+765,Sneha,,johngmail.com,Kolkata,Keyboard,2.0,1999.0,3998,Net Banking,Delivered,15,1,2022-07-11,3.0
+766,Rahul,45,mohit@yahoo.com,Delhi,Mobile,1.0,4999.0,4999,Net Banking,Returned,15,,2023-06-15,1.0
+767,Anjali,35,john@yahoo.com,Bangalore,Monitor,2.0,4999.0,9998,Net Banking,Cancelled,,2,2023-02-03,7.0
+768,Anjali,35,amitgmail.com,Delhi,Mouse,,14999.0,unknown,Cash,delivered,5,5,2024-01-04,3.0
+769,Priya,NA,anjali@gmail.com,Kolkata,Keyboard,5.0,14999.0,74995,Cash,Cancelled,five,N/A,2024-07-21,
+770,Rahul,30,mohitgmail.com,mumbai ,Keyboard,3.0,14999.0,44997,Cash,Returned,15,,2024-03-22,2.0
+771,Rahul,,amitgmail.com,Kolkata,Keyboard,5.0,1999.0,9995,Net Banking,Cancelled,five,1,2023-12-17,
+772,Sara,,david@gmail.com,Delhi,Mouse,,4999.0,unknown,Credit Card,delivered,10,4,2024-01-14,5.0
+773,Priya,22,anjali@gmail.com,DELHI,Keyboard,3.0,4999.0,14997,credit card,pending,15,4,2022-06-18,3.0
+774,John,,amit@gmail.com,Delhi,Keyboard,4.0,4999.0,19996,Debit Card,Cancelled,five,,2024-02-03,5.0
+775,Anjali,25,davidgmail.com,Bangalore,Headphones,4.0,1999.0,7996,upi,Cancelled,5,2,2023-05-12,-1.0
+776,David,30,john@gmail.com,Pune,Mobile,5.0,1999.0,9995,Credit Card,pending,0,,2022-01-19,3.0
+777,David,30,sneha@gmail.com,Chennai,Headphones,4.0,9999.0,39996,credit card,Delivered,five,N/A,2022-06-07,7.0
+778,Anjali,25,,Mumbai,Monitor,,,0,Credit Card,Delivered,15,N/A,2023-10-19,2.0
+779,Amit,35,sneha@gmail.com,Pune,Laptop,2.0,9999.0,19998,Credit Card,Cancelled,5,,2024-08-09,
+780,Mohit,30,rahul@gmail.com,,Laptop,2.0,1999.0,3998,upi,Cancelled,10,5,2022-03-06,
+781,Sneha,,mohit@gmail.com,Chennai,Laptop,5.0,4999.0,24995,UPI,Cancelled,5,1,2022-07-14,5.0
+782,Sneha,,sneha@yahoo.com,Delhi,Keyboard,3.0,1999.0,5997,upi,Cancelled,five,5,2023-11-01,3.0
+783,Priya,,john@yahoo.com,,Mouse,1.0,4999.0,4999,upi,delivered,5,3,2022-02-14,1.0
+784,Rahul,,,DELHI,Mouse,3.0,,0,credit card,Cancelled,five,4,2023-09-07,1.0
+785,David,NA,mohitgmail.com,mumbai ,Keyboard,1.0,25999.0,25999,Credit Card,Pending,0,5,2022-12-10,-1.0
+786,Kiran,35,mohitgmail.com,Delhi,Laptop,1.0,9999.0,9999,Debit Card,Cancelled,15,3,2024-07-07,2.0
+787,Sara,22,sneha@yahoo.com,Bangalore,Tablet,4.0,4999.0,19996,UPI,pending,0,5,2022-06-05,-1.0
+788,Sneha,35,,Chennai,Monitor,,9999.0,,Credit Card,pending,5,N/A,2023-03-01,
+789,Rahul,,,Ahmedabad,Keyboard,,4999.0,0,Credit Card,Delivered,15,1,2023-12-14,2.0
+790,Kiran,30,priyagmail.com,,Mouse,,4999.0,,upi,Pending,5,5,2022-02-23,1.0
+791,Mohit,30,snehagmail.com,Bangalore,Monitor,,14999.0,unknown,Debit Card,Cancelled,10,5,2023-03-13,5.0
+792,Mohit,NA,,Pune,Mobile,,4999.0,unknown,Cash,Returned,15,5,2024-09-17,7.0
+793,Mohit,NA,amit@yahoo.com,Delhi,Mouse,4.0,4999.0,19996,UPI,delivered,,2,2024-01-23,7.0
+794,Anjali,,,Kolkata,Headphones,2.0,9999.0,19998,Net Banking,delivered,15,1,2024-01-15,3.0
+795,Amit,30,sneha@gmail.com,,Keyboard,,14999.0,,credit card,Cancelled,15,4,2022-05-20,5.0
+796,Kiran,,,Delhi,Headphones,4.0,,unknown,Credit Card,Delivered,15,5,2024-08-20,2.0
+797,Sara,45,david@yahoo.com,Mumbai,Keyboard,4.0,9999.0,39996,Cash,Returned,five,2,2022-07-18,2.0
+798,Kiran,22,,Ahmedabad,Keyboard,1.0,9999.0,9999,Debit Card,Cancelled,5,5,2023-05-05,7.0
+799,Mohit,25,priya@yahoo.com,mumbai ,Laptop,,4999.0,,Net Banking,Pending,15,2,2024-09-01,-1.0
+800,Mohit,,,Delhi,Laptop,3.0,,unknown,credit card,delivered,10,N/A,2023-03-14,2.0
+801,Rahul,,john@gmail.com,Ahmedabad,Laptop,,4999.0,0,Credit Card,Delivered,five,4,2022-10-03,7.0
+802,Sara,,rahulgmail.com,Bangalore,Keyboard,,9999.0,0,Debit Card,Pending,15,2,2023-03-03,7.0
+803,Amit,35,rahulgmail.com,Bangalore,Mouse,1.0,14999.0,14999,upi,Pending,10,N/A,2024-08-29,5.0
+804,Priya,30,,Pune,Laptop,,25999.0,,UPI,Delivered,10,1,2023-03-28,7.0
+805,John,25,amit@gmail.com,Mumbai,Keyboard,4.0,14999.0,59996,Net Banking,Delivered,0,2,2022-08-29,7.0
+806,Sara,40,anjali@yahoo.com,mumbai ,Headphones,1.0,14999.0,14999,UPI,Cancelled,five,3,2024-03-21,3.0
+807,Sara,,mohit@gmail.com,Hyderabad,Mouse,2.0,9999.0,19998,Credit Card,Delivered,15,N/A,2024-04-16,
+808,Sneha,25,,Hyderabad,Headphones,,4999.0,,Net Banking,pending,five,N/A,2023-02-16,5.0
+809,Sara,22,sara@gmail.com,Mumbai,Mouse,4.0,,,credit card,Cancelled,five,4,2023-06-12,2.0
+810,Anjali,25,sara@yahoo.com,DELHI,Mouse,4.0,14999.0,59996,credit card,Delivered,five,4,2023-09-14,3.0
+811,Priya,22,rahul@yahoo.com,Kolkata,Mouse,2.0,,,credit card,delivered,15,2,2023-09-14,5.0
+812,Rahul,35,snehagmail.com,DELHI,Keyboard,1.0,14999.0,14999,Credit Card,Delivered,15,,2024-09-04,1.0
+813,Anjali,40,,DELHI,Laptop,3.0,14999.0,44997,credit card,Pending,,,2022-06-14,
+814,Sara,35,kiran@gmail.com,Pune,Keyboard,1.0,,unknown,credit card,pending,five,4,2023-05-19,
+815,Priya,35,,Kolkata,Laptop,5.0,14999.0,74995,Credit Card,Delivered,10,,2023-10-20,7.0
+816,Mohit,45,,mumbai ,Keyboard,2.0,,,Credit Card,Cancelled,0,5,2024-08-17,7.0
+817,David,45,saragmail.com,DELHI,Monitor,4.0,14999.0,59996,Net Banking,Pending,0,4,2022-07-14,1.0
+818,Anjali,30,johngmail.com,DELHI,Headphones,4.0,9999.0,39996,Debit Card,delivered,10,2,2023-07-06,
+819,John,45,john@gmail.com,mumbai ,Headphones,,1999.0,0,credit card,Pending,15,3,2023-11-13,
+820,Sneha,45,rahulgmail.com,Mumbai,Mouse,4.0,1999.0,7996,upi,Pending,15,,2024-09-16,5.0
+821,Anjali,,sara@yahoo.com,Hyderabad,Mouse,,4999.0,,Cash,Returned,0,5,2022-11-03,
+822,Sara,,priyagmail.com,mumbai ,Mouse,3.0,,,upi,Delivered,five,3,2022-10-17,5.0
+823,John,30,anjali@yahoo.com,Bangalore,Mobile,2.0,25999.0,51998,Debit Card,pending,5,,2023-11-02,
+824,Mohit,25,rahul@yahoo.com,DELHI,Mouse,3.0,,0,Debit Card,Delivered,0,3,2022-01-10,5.0
+825,Rahul,45,kiran@yahoo.com,DELHI,Keyboard,1.0,1999.0,1999,Cash,Pending,0,1,2022-07-03,2.0
+826,Anjali,30,mohit@gmail.com,DELHI,Headphones,4.0,9999.0,39996,UPI,pending,five,4,2023-02-11,3.0
+827,David,25,priya@yahoo.com,Chennai,Laptop,1.0,1999.0,1999,Net Banking,delivered,,4,2022-01-12,3.0
+828,Mohit,30,mohit@yahoo.com,Kolkata,Monitor,,1999.0,0,Debit Card,Delivered,10,1,2023-12-12,
+829,David,,amit@yahoo.com,,Mouse,5.0,4999.0,24995,upi,delivered,15,1,2024-07-19,7.0
+830,Rahul,25,sneha@gmail.com,mumbai ,Keyboard,5.0,25999.0,129995,Debit Card,Delivered,,4,2024-05-07,-1.0
+831,Rahul,30,kirangmail.com,Delhi,Monitor,1.0,1999.0,1999,UPI,Delivered,0,1,2022-11-18,7.0
+832,Sneha,30,mohit@gmail.com,Kolkata,Laptop,3.0,25999.0,77997,Net Banking,Cancelled,five,5,2022-11-02,5.0
+833,Kiran,45,,,Monitor,5.0,14999.0,74995,Debit Card,pending,0,,2022-05-24,-1.0
+834,Sneha,35,,Bangalore,Monitor,2.0,1999.0,3998,Net Banking,Pending,,3,2022-02-15,3.0
+835,John,25,,Pune,Keyboard,,25999.0,unknown,Debit Card,Returned,15,1,2022-05-12,3.0
+836,Sneha,35,,Hyderabad,Monitor,4.0,,,credit card,pending,,5,2023-11-24,2.0
+837,Kiran,,mohit@gmail.com,Chennai,Laptop,2.0,9999.0,19998,UPI,Delivered,,1,2023-03-06,
+838,Sara,45,,Kolkata,Mobile,4.0,1999.0,7996,upi,Pending,10,1,2023-07-16,1.0
+839,David,25,priyagmail.com,Kolkata,Monitor,2.0,14999.0,29998,upi,Returned,0,5,2023-01-22,3.0
+840,Amit,40,kiran@gmail.com,Bangalore,Tablet,5.0,9999.0,49995,upi,Returned,5,3,2023-12-19,-1.0
+841,John,,anjaligmail.com,Mumbai,Keyboard,,25999.0,0,Net Banking,pending,5,,2024-01-30,2.0
+842,Sneha,40,,DELHI,Monitor,4.0,25999.0,103996,Cash,pending,15,2,2022-05-27,5.0
+843,David,40,john@yahoo.com,Chennai,Tablet,4.0,25999.0,103996,credit card,Delivered,10,4,2022-12-29,-1.0
+844,Rahul,25,sneha@gmail.com,mumbai ,Laptop,1.0,,,Credit Card,pending,10,5,2022-11-17,5.0
+845,David,30,anjali@yahoo.com,DELHI,Keyboard,1.0,14999.0,14999,Net Banking,pending,0,4,2024-04-07,1.0
+846,Sneha,,,DELHI,Mouse,2.0,,,Net Banking,pending,,1,2023-09-24,7.0
+847,Sara,35,rahul@gmail.com,Bangalore,Monitor,2.0,,0,UPI,Delivered,15,4,2023-04-05,5.0
+848,John,45,sneha@gmail.com,Kolkata,Headphones,3.0,1999.0,5997,UPI,Cancelled,5,1,2022-06-24,
+849,Anjali,35,john@gmail.com,mumbai ,Mouse,5.0,14999.0,74995,Cash,Delivered,10,1,2023-10-09,7.0
+850,Sara,45,priya@gmail.com,Bangalore,Headphones,3.0,9999.0,29997,UPI,Delivered,0,4,2023-04-17,5.0
+851,Anjali,30,mohit@gmail.com,Mumbai,Mobile,1.0,25999.0,25999,upi,pending,10,2,2022-07-22,5.0
+852,David,45,mohitgmail.com,Kolkata,Laptop,3.0,9999.0,29997,Cash,pending,15,2,2023-02-09,2.0
+853,Sneha,45,sneha@gmail.com,Kolkata,Laptop,,14999.0,,Debit Card,Returned,15,,2022-12-29,3.0
+854,Priya,35,,Pune,Headphones,1.0,4999.0,4999,Net Banking,Returned,five,,2024-07-11,2.0
+855,Priya,,rahul@gmail.com,Mumbai,Mobile,4.0,25999.0,103996,Debit Card,Cancelled,,1,2022-11-29,-1.0
+856,Mohit,45,mohit@gmail.com,Ahmedabad,Tablet,2.0,1999.0,3998,UPI,Returned,0,N/A,2023-12-02,5.0
+857,Priya,30,,Kolkata,Keyboard,5.0,4999.0,24995,Debit Card,pending,15,2,2022-09-11,5.0
+858,Sneha,30,snehagmail.com,Delhi,Mobile,1.0,,0,Cash,Delivered,10,2,2023-12-25,2.0
+859,Mohit,35,priya@gmail.com,Pune,Monitor,1.0,25999.0,25999,UPI,pending,five,2,2023-03-13,2.0
+860,Amit,22,david@yahoo.com,Kolkata,Laptop,4.0,14999.0,59996,UPI,Cancelled,10,3,2022-12-11,
+861,Amit,22,rahul@gmail.com,Mumbai,Keyboard,2.0,9999.0,19998,credit card,Cancelled,5,3,2023-03-05,5.0
+862,Anjali,,,Hyderabad,Tablet,5.0,1999.0,9995,UPI,Delivered,0,,2022-10-14,1.0
+863,Kiran,45,,,Monitor,5.0,4999.0,24995,UPI,Pending,five,3,2023-12-01,2.0
+864,Amit,25,rahul@gmail.com,mumbai ,Keyboard,4.0,1999.0,7996,upi,Pending,5,,2023-08-22,5.0
+865,Sneha,45,john@yahoo.com,,Keyboard,1.0,1999.0,1999,Debit Card,Delivered,5,2,2024-08-05,5.0
+866,Priya,45,sara@yahoo.com,Pune,Laptop,,9999.0,0,Cash,Returned,,5,2023-07-18,-1.0
+867,Amit,40,,mumbai ,Laptop,2.0,25999.0,51998,upi,pending,5,,2022-01-23,-1.0
+868,David,25,rahul@yahoo.com,Pune,Monitor,4.0,,0,upi,Returned,15,5,2023-02-12,3.0
+869,Kiran,30,kirangmail.com,Mumbai,Mouse,2.0,1999.0,3998,Net Banking,Returned,,,2022-07-31,
+870,David,35,,Delhi,Mobile,3.0,9999.0,29997,Debit Card,Delivered,,2,2023-06-22,3.0
+871,Sneha,30,john@gmail.com,Chennai,Monitor,,4999.0,unknown,Credit Card,Delivered,five,3,2022-02-10,
+872,Rahul,25,,Pune,Monitor,3.0,9999.0,29997,UPI,Cancelled,0,,2023-09-12,-1.0
+873,Amit,40,,,Keyboard,3.0,4999.0,14997,upi,delivered,0,,2022-01-11,
+874,Sara,35,anjaligmail.com,Kolkata,Mobile,4.0,,unknown,Net Banking,pending,15,2,2023-12-06,5.0
+875,Priya,45,rahul@yahoo.com,Ahmedabad,Mobile,,,unknown,Cash,Pending,5,2,2022-08-26,7.0
+876,Rahul,40,,Bangalore,Mouse,,4999.0,0,Cash,pending,,2,2023-05-18,1.0
+877,Priya,35,anjali@yahoo.com,,Mobile,1.0,14999.0,14999,credit card,Delivered,,1,2022-05-27,5.0
+878,Sneha,22,amitgmail.com,Delhi,Tablet,1.0,1999.0,1999,Debit Card,pending,,1,2023-01-29,-1.0
+879,Rahul,45,priyagmail.com,Ahmedabad,Mouse,1.0,1999.0,1999,Net Banking,Returned,5,3,2024-09-16,3.0
+880,David,22,,Delhi,Laptop,2.0,4999.0,9998,upi,Delivered,0,5,2023-05-06,3.0
+881,Amit,30,amitgmail.com,Chennai,Headphones,5.0,14999.0,74995,Cash,Pending,10,,2022-04-16,3.0
+882,Priya,25,anjaligmail.com,Chennai,Laptop,,14999.0,0,UPI,Cancelled,0,5,2022-08-20,3.0
+883,Rahul,22,kirangmail.com,Pune,Monitor,3.0,1999.0,5997,UPI,delivered,5,,2022-05-02,5.0
+884,John,40,sara@gmail.com,Ahmedabad,Keyboard,,,unknown,UPI,Cancelled,five,N/A,2022-06-03,1.0
+885,Mohit,30,saragmail.com,Ahmedabad,Keyboard,1.0,4999.0,4999,upi,Returned,0,1,2024-03-18,7.0
+886,Rahul,25,saragmail.com,Pune,Tablet,,9999.0,,UPI,Returned,15,4,2023-03-14,
+887,Mohit,45,rahulgmail.com,Pune,Monitor,4.0,25999.0,103996,Cash,delivered,,4,2024-09-23,7.0
+888,David,25,kiran@yahoo.com,mumbai ,Mouse,2.0,14999.0,29998,credit card,pending,5,,2023-07-04,1.0
+889,David,35,,Ahmedabad,Mobile,3.0,1999.0,5997,Credit Card,Delivered,10,3,2022-08-29,-1.0
+890,Sneha,NA,rahul@yahoo.com,Chennai,Mouse,2.0,9999.0,19998,Debit Card,Delivered,five,2,2024-05-19,1.0
+891,Sara,,amit@yahoo.com,Mumbai,Keyboard,,,,Credit Card,pending,,1,2024-09-12,5.0
+892,Rahul,22,,Delhi,Mobile,5.0,4999.0,24995,Credit Card,Delivered,,N/A,2024-05-07,-1.0
+893,Anjali,NA,,Pune,Keyboard,2.0,4999.0,9998,UPI,Returned,five,,2023-03-03,1.0
+894,David,22,amitgmail.com,Bangalore,Laptop,1.0,4999.0,4999,Cash,Returned,five,4,2022-10-21,7.0
+895,Rahul,40,sneha@yahoo.com,Kolkata,Laptop,3.0,25999.0,77997,Net Banking,Returned,5,,2023-12-30,2.0
+896,David,35,mohitgmail.com,mumbai ,Mouse,5.0,1999.0,9995,Credit Card,pending,15,4,2023-02-15,3.0
+897,Mohit,30,,Chennai,Tablet,,14999.0,unknown,Credit Card,Delivered,0,3,2023-10-31,7.0
+898,David,35,johngmail.com,Delhi,Laptop,3.0,1999.0,5997,Debit Card,delivered,0,N/A,2024-03-08,3.0
+899,Priya,22,,mumbai ,Monitor,5.0,4999.0,24995,Credit Card,delivered,15,1,2022-07-12,1.0
+900,Mohit,22,,,Mobile,1.0,9999.0,9999,UPI,Returned,five,3,2022-11-19,2.0
+901,David,,david@gmail.com,Bangalore,Laptop,,1999.0,unknown,Net Banking,Returned,15,5,2023-12-21,-1.0
+902,Priya,30,rahul@yahoo.com,DELHI,Laptop,1.0,9999.0,9999,credit card,Pending,5,N/A,2024-05-22,
+903,Sara,45,anjaligmail.com,Kolkata,Tablet,2.0,,,Net Banking,Returned,0,,2023-11-01,-1.0
+904,Rahul,35,kiran@gmail.com,mumbai ,Keyboard,4.0,4999.0,19996,Cash,Delivered,0,2,2023-12-01,-1.0
+905,Anjali,25,anjali@gmail.com,Hyderabad,Mobile,3.0,25999.0,77997,UPI,Pending,0,3,2024-06-10,7.0
+906,John,25,rahul@yahoo.com,Ahmedabad,Tablet,3.0,1999.0,5997,upi,Returned,five,2,2023-01-08,1.0
+907,Mohit,22,,Pune,Mouse,5.0,14999.0,74995,Net Banking,pending,5,4,2024-09-22,3.0
+908,David,45,priya@yahoo.com,Ahmedabad,Tablet,5.0,9999.0,49995,credit card,Delivered,,,2023-06-09,1.0
+909,John,22,rahul@gmail.com,Pune,Mobile,2.0,,0,Net Banking,Returned,0,2,2024-01-29,5.0
+910,David,45,anjali@yahoo.com,Ahmedabad,Laptop,4.0,,,Credit Card,Pending,five,1,2024-06-14,5.0
+911,Sara,,sara@gmail.com,Hyderabad,Monitor,4.0,4999.0,19996,Cash,Pending,five,,2024-02-26,5.0
+912,Anjali,22,davidgmail.com,Bangalore,Keyboard,3.0,14999.0,44997,Debit Card,Cancelled,,1,2022-04-28,7.0
+913,Sneha,45,mohit@yahoo.com,Mumbai,Mobile,4.0,1999.0,7996,upi,Delivered,five,4,2024-03-03,3.0
+914,Mohit,30,,Delhi,Tablet,,4999.0,,upi,pending,15,N/A,2022-09-16,5.0
+915,Mohit,30,amit@gmail.com,Hyderabad,Mouse,2.0,,unknown,UPI,Pending,5,3,2023-06-22,5.0
+916,Kiran,30,,Pune,Mouse,4.0,25999.0,103996,Credit Card,delivered,,2,2023-05-09,1.0
+917,Amit,30,,Bangalore,Headphones,,25999.0,0,Debit Card,Returned,10,1,2024-01-11,-1.0
+918,Anjali,22,anjaligmail.com,DELHI,Monitor,,14999.0,unknown,Credit Card,Delivered,5,,2024-09-20,2.0
+919,Sneha,,,Chennai,Keyboard,,25999.0,,Net Banking,Delivered,10,N/A,2023-03-07,3.0
+920,Mohit,25,anjali@yahoo.com,Pune,Tablet,3.0,9999.0,29997,UPI,delivered,15,5,2022-01-17,-1.0
+921,Rahul,NA,,,Monitor,1.0,4999.0,4999,Debit Card,delivered,15,4,2022-12-10,3.0
+922,Priya,,john@gmail.com,Delhi,Laptop,,,0,credit card,Delivered,,4,2024-05-15,1.0
+923,John,25,anjali@gmail.com,Pune,Mobile,,25999.0,0,Debit Card,Returned,,4,2023-05-24,1.0
+924,Mohit,45,anjali@yahoo.com,Mumbai,Tablet,4.0,1999.0,7996,upi,Pending,,3,2022-07-20,3.0
+925,Mohit,,sneha@gmail.com,Mumbai,Laptop,,9999.0,unknown,Credit Card,Pending,10,N/A,2024-06-19,-1.0
+926,Sneha,45,rahul@yahoo.com,,Headphones,,25999.0,unknown,Debit Card,delivered,five,4,2023-06-16,-1.0
+927,Mohit,30,mohitgmail.com,Hyderabad,Monitor,5.0,14999.0,74995,Debit Card,Returned,5,1,2022-02-22,
+928,John,25,kiran@yahoo.com,,Mobile,2.0,25999.0,51998,UPI,Pending,0,1,2024-03-31,1.0
+929,Kiran,30,amit@gmail.com,Pune,Laptop,1.0,,0,credit card,pending,5,4,2023-03-24,
+930,Sneha,35,,,Mouse,3.0,4999.0,14997,Debit Card,pending,15,N/A,2023-10-09,3.0
+931,Kiran,25,rahul@gmail.com,Delhi,Laptop,1.0,9999.0,9999,Cash,delivered,0,1,2023-11-07,2.0
+932,Sara,25,priya@yahoo.com,Chennai,Headphones,3.0,4999.0,14997,Credit Card,Returned,0,4,2022-10-17,1.0
+933,Anjali,,,Bangalore,Mobile,,1999.0,,UPI,Delivered,5,,2023-05-14,7.0
+934,Anjali,25,,mumbai ,Monitor,5.0,1999.0,9995,Net Banking,Delivered,5,5,2023-10-09,
+935,David,22,david@gmail.com,,Mouse,1.0,4999.0,4999,Debit Card,Pending,10,1,2022-09-18,2.0
+936,John,35,priyagmail.com,Kolkata,Headphones,3.0,4999.0,14997,Debit Card,Delivered,10,,2022-01-31,7.0
+937,Sneha,NA,mohit@yahoo.com,Kolkata,Mobile,3.0,14999.0,44997,Debit Card,pending,five,3,2023-10-30,5.0
+938,Anjali,40,rahulgmail.com,Pune,Headphones,5.0,25999.0,129995,Cash,delivered,five,3,2022-04-16,-1.0
+939,Kiran,,mohitgmail.com,Hyderabad,Tablet,5.0,1999.0,9995,credit card,Delivered,15,2,2022-11-23,1.0
+940,Mohit,,,Mumbai,Laptop,5.0,9999.0,49995,Debit Card,Cancelled,15,N/A,2024-09-08,2.0
+941,Rahul,35,,Hyderabad,Laptop,2.0,1999.0,3998,Credit Card,Cancelled,five,1,2023-01-02,
+942,Mohit,45,sneha@gmail.com,Kolkata,Monitor,2.0,14999.0,29998,Debit Card,delivered,5,1,2022-12-03,7.0
+943,Mohit,25,kiran@yahoo.com,Hyderabad,Mouse,,25999.0,0,UPI,Pending,5,1,2022-10-12,-1.0
+944,Priya,40,mohit@gmail.com,Ahmedabad,Mobile,4.0,1999.0,7996,Net Banking,Cancelled,,4,2023-05-21,2.0
+945,Anjali,22,kiran@gmail.com,Kolkata,Mobile,1.0,9999.0,9999,upi,Returned,0,5,2023-08-14,7.0
+946,Mohit,25,anjali@gmail.com,Kolkata,Tablet,3.0,,,UPI,Cancelled,15,1,2022-02-10,7.0
+947,Anjali,22,,Ahmedabad,Mouse,3.0,14999.0,44997,credit card,Delivered,10,5,2024-03-04,1.0
+948,Sara,22,rahul@gmail.com,Pune,Mobile,2.0,1999.0,3998,Debit Card,Delivered,5,,2022-01-30,-1.0
+949,Priya,22,john@gmail.com,Mumbai,Tablet,5.0,1999.0,9995,Credit Card,Cancelled,10,,2023-01-13,7.0
+950,Priya,30,rahul@yahoo.com,Bangalore,Tablet,4.0,9999.0,39996,upi,Pending,,N/A,2024-03-21,5.0
+951,Anjali,35,kiran@yahoo.com,Kolkata,Tablet,4.0,,,upi,pending,15,2,2023-10-15,1.0
+952,Sneha,45,davidgmail.com,Delhi,Laptop,3.0,,,Cash,Delivered,5,1,2022-09-28,
+953,Sara,35,anjali@gmail.com,Chennai,Mouse,4.0,14999.0,59996,Net Banking,delivered,,N/A,2022-08-10,3.0
+954,Rahul,30,david@gmail.com,Chennai,Tablet,3.0,,unknown,Cash,Returned,,5,2024-02-18,2.0
+955,Rahul,25,john@yahoo.com,DELHI,Tablet,4.0,4999.0,19996,upi,delivered,five,1,2024-03-09,2.0
+956,Rahul,35,amit@yahoo.com,Kolkata,Laptop,1.0,,,Cash,pending,,4,2023-04-18,3.0
+957,Sneha,25,sara@yahoo.com,Bangalore,Headphones,1.0,25999.0,25999,Net Banking,Returned,,3,2022-09-29,1.0
+958,Mohit,25,amit@yahoo.com,Chennai,Tablet,3.0,9999.0,29997,Debit Card,Returned,5,5,2023-03-28,3.0
+959,Sneha,,priya@gmail.com,Delhi,Mobile,5.0,14999.0,74995,Credit Card,Delivered,0,5,2023-06-27,3.0
+960,Kiran,25,johngmail.com,Pune,Headphones,1.0,25999.0,25999,Cash,Delivered,5,,2022-09-02,-1.0
+961,Sara,35,rahulgmail.com,DELHI,Tablet,,9999.0,unknown,credit card,delivered,10,,2024-06-19,1.0
+962,Rahul,NA,johngmail.com,Hyderabad,Keyboard,2.0,25999.0,51998,Credit Card,Pending,5,3,2022-04-07,5.0
+963,Rahul,,sara@gmail.com,Kolkata,Laptop,1.0,,unknown,Debit Card,pending,0,5,2022-05-26,3.0
+964,Anjali,22,anjaligmail.com,Delhi,Laptop,4.0,25999.0,103996,upi,Delivered,,,2024-09-19,3.0
+965,Priya,30,rahul@gmail.com,Kolkata,Mouse,2.0,25999.0,51998,credit card,Cancelled,15,4,2024-05-05,
+966,Anjali,NA,,Mumbai,Mouse,5.0,9999.0,49995,UPI,Cancelled,five,3,2022-12-26,7.0
+967,Rahul,25,john@gmail.com,Pune,Mouse,,25999.0,unknown,Debit Card,pending,5,3,2024-03-04,5.0
+968,Priya,,saragmail.com,Chennai,Headphones,2.0,25999.0,51998,credit card,Delivered,10,,2022-02-01,
+969,Sara,30,,Pune,Monitor,4.0,25999.0,103996,Cash,Cancelled,10,2,2023-07-12,1.0
+970,Kiran,25,mohit@yahoo.com,Hyderabad,Tablet,5.0,,unknown,Credit Card,Delivered,15,,2023-08-17,2.0
+971,John,40,kirangmail.com,Ahmedabad,Tablet,,4999.0,0,Credit Card,Cancelled,0,4,2023-04-23,1.0
+972,John,25,amit@yahoo.com,Mumbai,Headphones,3.0,25999.0,77997,UPI,pending,0,1,2022-08-11,3.0
+973,Rahul,30,,Chennai,Headphones,3.0,9999.0,29997,Net Banking,Delivered,10,2,2022-05-22,1.0
+974,Priya,,mohit@yahoo.com,Kolkata,Tablet,3.0,4999.0,14997,Net Banking,Cancelled,5,5,2023-04-30,5.0
+975,Rahul,30,,Pune,Monitor,3.0,25999.0,77997,Debit Card,Cancelled,10,1,2023-11-27,3.0
+976,Priya,30,mohit@yahoo.com,Bangalore,Monitor,,14999.0,0,Cash,pending,10,5,2023-08-04,
+977,Mohit,45,mohit@yahoo.com,Pune,Headphones,3.0,14999.0,44997,Credit Card,delivered,0,N/A,2023-12-31,5.0
+978,Rahul,40,,mumbai ,Monitor,2.0,25999.0,51998,Net Banking,Cancelled,0,N/A,2022-04-01,-1.0
+979,Amit,22,anjali@yahoo.com,Delhi,Laptop,2.0,14999.0,29998,UPI,pending,0,3,2023-02-07,7.0
+980,Priya,NA,sara@gmail.com,mumbai ,Keyboard,3.0,25999.0,77997,Net Banking,pending,five,1,2022-04-10,
+981,Rahul,NA,rahulgmail.com,Kolkata,Keyboard,5.0,4999.0,24995,UPI,pending,0,N/A,2022-07-29,5.0
+982,Kiran,25,amitgmail.com,Delhi,Monitor,,4999.0,,Credit Card,Pending,5,1,2023-10-01,5.0
+983,John,,amit@gmail.com,Pune,Headphones,5.0,14999.0,74995,Debit Card,Pending,,3,2022-01-26,-1.0
+984,Amit,25,mohitgmail.com,Bangalore,Mobile,,14999.0,0,upi,pending,five,2,2023-09-20,2.0
+985,John,35,anjali@yahoo.com,Kolkata,Keyboard,,,0,Credit Card,delivered,15,3,2023-06-08,
+986,Mohit,25,anjali@yahoo.com,Bangalore,Laptop,4.0,14999.0,59996,UPI,Returned,0,5,2022-10-09,5.0
+987,Amit,22,kiran@yahoo.com,Hyderabad,Mobile,5.0,9999.0,49995,Cash,pending,15,3,2022-01-12,1.0
+988,David,35,sara@yahoo.com,Delhi,Mobile,3.0,25999.0,77997,credit card,Pending,10,,2022-06-12,
+989,Mohit,30,,Delhi,Mouse,3.0,14999.0,44997,credit card,Returned,15,4,2023-07-31,7.0
+990,Kiran,40,,mumbai ,Tablet,2.0,25999.0,51998,Net Banking,delivered,15,1,2023-11-06,1.0
+991,Anjali,25,priya@yahoo.com,Hyderabad,Mouse,,4999.0,,Debit Card,pending,5,1,2022-01-31,2.0
+992,Priya,25,,Mumbai,Mouse,4.0,14999.0,59996,credit card,Delivered,15,N/A,2024-01-16,3.0
+993,Mohit,45,priya@yahoo.com,Bangalore,Keyboard,,1999.0,,Net Banking,delivered,5,2,2023-09-14,3.0
+994,Mohit,35,snehagmail.com,,Mouse,4.0,,unknown,upi,Pending,0,5,2023-05-18,1.0
+995,Sara,22,rahul@gmail.com,Pune,Monitor,,1999.0,,Net Banking,Delivered,10,2,2023-10-07,
+996,Kiran,NA,snehagmail.com,Ahmedabad,Monitor,,,0,UPI,Cancelled,,5,2024-01-18,-1.0
+997,Kiran,,mohit@gmail.com,Delhi,Mobile,1.0,14999.0,14999,upi,delivered,10,1,2022-05-22,1.0
+998,John,45,amitgmail.com,Kolkata,Headphones,2.0,1999.0,3998,credit card,Cancelled,0,N/A,2023-05-26,-1.0
+999,Mohit,35,,mumbai ,Laptop,3.0,1999.0,5997,Net Banking,pending,0,5,2022-06-11,5.0
+1000,John,22,sara@yahoo.com,Chennai,Tablet,3.0,,,upi,Delivered,5,2,2024-08-17,7.0
