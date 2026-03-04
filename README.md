@@ -18,6 +18,7 @@ The system is designed to support full analytics workflows per organization: dat
 12. Environment Variables
 13. Deployment Notes
 14. Frontend Overview (Concise)
+15. Additional Documentation
 
 ## Project Overview
 
@@ -350,3 +351,9 @@ Frontend API target:
 
 - `VITE_API_BASE_URL` (optional)
 - Defaults to `http://127.0.0.1:8000/api` in dev.
+
+## Additional Documentation
+
+- API testing guide: `test_api/README.md`
+- End-to-end API smoke test: `test_api/full_workflow.http`
+- Team workflow guideline: `PROJECT_WORKING_GUIDELINE.md`

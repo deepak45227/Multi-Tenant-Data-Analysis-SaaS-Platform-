@@ -1,0 +1,366 @@
+### ============================================================================
+### Multi-Tenant Data Analysis Platform - End-to-End API Smoke Test
+### Runner: VS Code REST Client extension
+### File: test_api/full_workflow.http
+### ============================================================================
+
+@baseUrl = http://127.0.0.1:8000
+@api = {{baseUrl}}/api
+@password = StrongPassword123
+@user1_email = api_user1@example.com
+@user2_email = api_user2@example.com
+
+### --------------------------------------------------------------------------
+### 1) Register users
+### --------------------------------------------------------------------------
+
+### Register User 1
+POST {{api}}/accounts/register/
+Content-Type: application/json
+
+{
+  "email": "{{user1_email}}",
+  "username": "api_user1",
+  "password": "{{password}}"
+}
+
+### Register User 2
+POST {{api}}/accounts/register/
+Content-Type: application/json
+
+{
+  "email": "{{user2_email}}",
+  "username": "api_user2",
+  "password": "{{password}}"
+}
+
+### --------------------------------------------------------------------------
+### 2) Login and capture JWTs
+### --------------------------------------------------------------------------
+
+### Login User 1
+# @name user1_login
+POST {{api}}/token/
+Content-Type: application/json
+
+{
+  "email": "{{user1_email}}",
+  "password": "{{password}}"
+}
+
+@token1 = {{user1_login.response.body.access}}
+
+### Login User 2
+# @name user2_login
+POST {{api}}/token/
+Content-Type: application/json
+
+{
+  "email": "{{user2_email}}",
+  "password": "{{password}}"
+}
+
+@token2 = {{user2_login.response.body.access}}
+
+### --------------------------------------------------------------------------
+### 3) Organization + membership management
+### --------------------------------------------------------------------------
+
+### Create organization as User 1
+# @name create_org
+POST {{api}}/organizations/create/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "name": "QA Org Smoke"
+}
+
+@org_id = {{create_org.response.body.organization.id}}
+
+### List organizations for User 1
+GET {{api}}/organizations/
+Authorization: Bearer {{token1}}
+
+### Add User 2 as member
+# @name add_member
+POST {{api}}/organizations/members/{{org_id}}/add-member/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "email": "{{user2_email}}",
+  "role": "member"
+}
+
+@membership_id = {{add_member.response.body.membership.id}}
+
+### Upgrade User 2 to admin
+PATCH {{api}}/organizations/members/{{membership_id}}/update-role/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "role": "admin"
+}
+
+### List organization members
+GET {{api}}/organizations/members/{{org_id}}/
+Authorization: Bearer {{token1}}
+
+### --------------------------------------------------------------------------
+### 4) Dataset upload + pipeline flow
+### --------------------------------------------------------------------------
+
+### Upload dataset
+# @name upload_dataset
+POST {{api}}/datasets/upload/
+Authorization: Bearer {{token1}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="name"
+
+sales_smoke
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="organization_id"
+
+{{org_id}}
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="test_copy.csv"
+Content-Type: text/csv
+
+< ../testdata/test_copy.csv
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+@dataset_id = {{upload_dataset.response.body.dataset_id}}
+@base_version_id = {{upload_dataset.response.body.version_id}}
+
+### List datasets in organization
+GET {{api}}/datasets/list/?organization={{org_id}}
+Authorization: Bearer {{token1}}
+
+### Preview base version (wait a few seconds if ingestion is still running)
+GET {{api}}/datasets/preview/{{base_version_id}}/
+Authorization: Bearer {{token1}}
+
+### Start editing session
+# @name start_session
+POST {{api}}/datasets/edit/start/{{dataset_id}}/
+Authorization: Bearer {{token1}}
+
+@session_id = {{start_session.response.body.session_id}}
+
+### Add visual step - remove nulls
+POST {{api}}/datasets/edit/add-step/{{session_id}}/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "type": "visual",
+  "operation": "remove_nulls",
+  "params": {
+    "columns": ["name"]
+  }
+}
+
+### Add visual step - convert amount type
+POST {{api}}/datasets/edit/add-step/{{session_id}}/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "type": "visual",
+  "operation": "change_type",
+  "params": {
+    "column": "amount",
+    "new_type": "INTEGER"
+  }
+}
+
+### Add SQL step
+POST {{api}}/datasets/edit/add-step/{{session_id}}/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "type": "sql",
+  "sql": "SELECT name, amount FROM data WHERE amount > 100"
+}
+
+### Preview pipeline result
+GET {{api}}/datasets/edit/preview/{{session_id}}/?limit=50
+Authorization: Bearer {{token1}}
+
+### Apply editing session
+# @name apply_session
+POST {{api}}/datasets/edit/apply/{{session_id}}/
+Authorization: Bearer {{token1}}
+
+@latest_version_id = {{apply_session.response.body.version_id}}
+
+### Preview latest version
+GET {{api}}/datasets/preview/{{latest_version_id}}/
+Authorization: Bearer {{token1}}
+
+### --------------------------------------------------------------------------
+### 5) Saved query + ad-hoc query
+### --------------------------------------------------------------------------
+
+### Create saved query
+# @name create_query
+POST {{api}}/queries/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "organization": {{org_id}},
+  "dataset": "{{dataset_id}}",
+  "name": "Sales Over 100",
+  "sql": "SELECT name, amount FROM data WHERE amount > 100",
+  "description": "Smoke test saved query"
+}
+
+@query_id = {{create_query.response.body.id}}
+
+### List saved queries
+GET {{api}}/queries/
+Authorization: Bearer {{token1}}
+
+### Execute saved query
+POST {{api}}/queries/{{query_id}}/execute/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "max_rows": 100
+}
+
+### Execute ad-hoc query
+POST {{api}}/queries/execute/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "dataset": "{{dataset_id}}",
+  "sql": "SELECT name, amount FROM data LIMIT 5",
+  "max_rows": 5
+}
+
+### Query execution logs
+GET {{api}}/query-executions/
+Authorization: Bearer {{token1}}
+
+### --------------------------------------------------------------------------
+### 6) Chart + dashboard
+### --------------------------------------------------------------------------
+
+### Create chart
+# @name create_chart
+POST {{api}}/charts/create/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "organization": {{org_id}},
+  "name": "Amount by Name",
+  "saved_query": {{query_id}},
+  "chart_type": "bar",
+  "group_by_column": "name",
+  "metric_column": "amount",
+  "aggregation": "sum",
+  "filters": [],
+  "limit": 20
+}
+
+@chart_id = {{create_chart.response.body.chart_id}}
+
+### Execute chart
+GET {{api}}/charts/{{chart_id}}/execute/
+Authorization: Bearer {{token1}}
+
+### Create dashboard
+# @name create_dashboard
+POST {{api}}/dashboards/create/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "organization": {{org_id}},
+  "name": "Smoke Dashboard",
+  "description": "Dashboard for API smoke test"
+}
+
+@dashboard_id = {{create_dashboard.response.body.dashboard_id}}
+
+### Add chart to dashboard
+POST {{api}}/dashboards/add-chart/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "dashboard": {{dashboard_id}},
+  "chart": {{chart_id}},
+  "position_x": 0,
+  "position_y": 0,
+  "width": 6,
+  "height": 4,
+  "order": 1
+}
+
+### Execute dashboard
+GET {{api}}/dashboards/{{dashboard_id}}/execute/
+Authorization: Bearer {{token1}}
+
+### --------------------------------------------------------------------------
+### 7) Reports
+### --------------------------------------------------------------------------
+
+### Create report
+# @name create_report
+POST {{api}}/reports/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+  "organization": {{org_id}},
+  "dashboard": {{dashboard_id}},
+  "name": "Smoke Report",
+  "description": "Manual trigger report",
+  "recipients": ["{{user1_email}}"],
+  "frequency": "manual",
+  "is_active": true
+}
+
+@report_id = {{create_report.response.body.id}}
+
+### List reports
+GET {{api}}/reports/
+Authorization: Bearer {{token1}}
+
+### Trigger report
+POST {{api}}/reports/{{report_id}}/trigger/
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{}
+
+### --------------------------------------------------------------------------
+### 8) Optional cleanup
+### --------------------------------------------------------------------------
+
+### Delete chart
+DELETE {{api}}/charts/{{chart_id}}/delete/
+Authorization: Bearer {{token1}}
+
+### Delete dashboard
+DELETE {{api}}/dashboards/{{dashboard_id}}/delete/
+Authorization: Bearer {{token1}}
+
+### Delete saved query
+DELETE {{api}}/queries/{{query_id}}/
+Authorization: Bearer {{token1}}
+
+### Delete report
+DELETE {{api}}/reports/{{report_id}}/
+Authorization: Bearer {{token1}}
