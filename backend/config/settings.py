@@ -74,8 +74,9 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
+    "https://multi-tenant-data-analysis-saa-s-pl.vercel.app",
     "http://localhost:5173",  # Vite dev server
     "http://localhost:3000",  # or React default
     "http://127.0.0.1:5173",
@@ -84,8 +85,14 @@ CORS_ALLOWED_ORIGINS = [
 
 # Dev convenience: allow localhost/127.0.0.1 on any port (e.g. Vite 5174, 5175)
 CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
     r"^http://localhost:\d+$",
     r"^http://127\.0\.0\.1:\d+$",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://multi-tenant-data-analysis-saa-s-pl.vercel.app",
+    "https://*.vercel.app",
 ]
 
 
