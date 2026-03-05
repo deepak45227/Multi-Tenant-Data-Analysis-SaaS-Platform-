@@ -13,7 +13,7 @@ import Sidebar from "./layout/Sidebar";
 import DashboardsPage from "./pages/DashboardsPage";
 
 // ── API CONFIG ──────────────────────────────────────────────────────────────
-const DEFAULT_PROD_API_BASE = "https://multi-tenant-data-analysis-saas-platform-production.up.railway.app/api";
+const DEFAULT_PROD_API_BASE = "https://backend-multi-tenant-data-analysis-saas-platform-production.up.railway.app/api";
 const BASE = (
   import.meta.env.VITE_API_BASE_URL ||
   (import.meta.env.DEV ? "http://127.0.0.1:8000/api" : DEFAULT_PROD_API_BASE)
