@@ -54,7 +54,6 @@ INSTALLED_APPS = [
     'query',
     'visualization',
     'report',
-    'django_celery_beat',
     'django_extensions',
      'corsheaders',
    
