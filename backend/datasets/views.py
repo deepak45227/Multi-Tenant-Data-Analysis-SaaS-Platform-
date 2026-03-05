@@ -145,9 +145,26 @@ class DatasetPreviewView(RetrieveAPIView):
 
         if not table_name:
             return Response({"error": "Is version ka koi physical table nahi hai (historical version)"}, status=400)
+        if version.status != "SUCCESS":
+            return Response(
+                {
+                    "error": "Preview is not ready yet. Ingestion is still running or failed.",
+                    "version_status": version.status,
+                },
+                status=409,
+            )
 
         manager = DuckDBManager(org_id)
-        preview = manager.preview_table(table_name, limit=10)
+        try:
+            preview = manager.preview_table(table_name, limit=10)
+        except Exception as exc:
+            return Response(
+                {
+                    "error": "Preview table is not available yet. Please try again in a moment.",
+                    "detail": str(exc),
+                },
+                status=409,
+            )
 
         return Response({
             "dataset_id": version.dataset.id,
@@ -317,6 +334,14 @@ class SessionPreviewView(APIView):
             active_version = dataset.versions.filter(version_type="BASE").first()
             if not active_version:
                 return Response({"error": "No base or active version"}, status=400)
+        if active_version.status != "SUCCESS":
+            return Response(
+                {
+                    "error": "Preview is not ready yet. Base/active version ingestion is incomplete.",
+                    "version_status": active_version.status,
+                },
+                status=409,
+            )
 
         table_name = active_version.get_table_name()  # this gives _base or _latest
 
@@ -348,7 +373,13 @@ class SessionPreviewView(APIView):
             })
 
         except Exception as e:
-            return Response({"error": str(e)}, status=500)
+            detail = str(e)
+            if "does not exist" in detail.lower() or "catalog" in detail.lower():
+                return Response(
+                    {"error": "Preview table is not available yet. Please retry shortly.", "detail": detail},
+                    status=409,
+                )
+            return Response({"error": detail}, status=500)
 
         finally:
             conn.close()
