@@ -1,4 +1,4 @@
-# Multi-Tenant Data Analysis SaaS Platform
+# Django Multi-Tenant Data Analysis SaaS Platform
 
 A production-style, multi-tenant analytics platform built with Django REST Framework, DuckDB, Celery, Redis, and React.  
 The system is designed to support full analytics workflows per organization: dataset ingestion, transformation pipelines, SQL querying, chart/dashboard execution, and scheduled report delivery.
