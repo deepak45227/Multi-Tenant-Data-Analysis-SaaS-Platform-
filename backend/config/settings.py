@@ -219,12 +219,20 @@ UPLOAD_ROOT = "/tmp/storage/uploads"
 DUCKDB_ROOT = "/tmp/storage/duckdb"
 
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "your_email"
-EMAIL_HOST_PASSWORD = "your_app_password"
+EMAIL_BACKEND = os.environ.get("EMAIL_BACKEND", "django.core.mail.backends.smtp.EmailBackend")
+EMAIL_HOST = os.environ.get("EMAIL_HOST", "smtp.gmail.com")
+EMAIL_PORT = int(os.environ.get("EMAIL_PORT", "587"))
+EMAIL_USE_TLS = os.environ.get("EMAIL_USE_TLS", "true").lower() == "true"
+EMAIL_USE_SSL = os.environ.get("EMAIL_USE_SSL", "false").lower() == "true"
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER", "")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD", "")
+DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL", EMAIL_HOST_USER or "no-reply@databi.local")
+FRONTEND_URL = os.environ.get("FRONTEND_URL", "http://localhost:5173")
+PASSWORD_RESET_TIMEOUT = int(os.environ.get("PASSWORD_RESET_TIMEOUT", "86400"))
+INVITE_EXPIRY_DAYS = int(os.environ.get("INVITE_EXPIRY_DAYS", "7"))
+
+if EMAIL_USE_SSL:
+    EMAIL_USE_TLS = False
 
 
 # Recommended for Django 4.x+

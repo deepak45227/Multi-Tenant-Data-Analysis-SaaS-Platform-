@@ -16,6 +16,7 @@ const Sidebar = ({ active, setActive, orgs, selectedOrg, setSelectedOrg, collaps
     { id: "charts", icon: "chart", label: "Charts" },
     { id: "dashboards", icon: "dashboard", label: "Dashboards" },
     { id: "reports", icon: "report", label: "Reports" },
+    { id: "account", icon: "org", label: "Account" },
   ];
 
   return (

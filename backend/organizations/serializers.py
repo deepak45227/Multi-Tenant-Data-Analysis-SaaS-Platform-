@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Organization, Membership
+from .models import Organization, Membership, OrganizationInvite
 
 class OrganizationSerializer(serializers.ModelSerializer):
     current_user_role = serializers.SerializerMethodField()
@@ -30,7 +30,32 @@ class OrganizationSerializer(serializers.ModelSerializer):
 class MembershipSerializer(serializers.ModelSerializer):
     user_email = serializers.EmailField(source="user.email", read_only=True)
     username = serializers.CharField(source="user.username", read_only=True)
+    is_owner = serializers.SerializerMethodField()
 
     class Meta:
         model = Membership
-        fields = ["id", "organization", "user", "user_email", "username", "role"]
+        fields = ["id", "organization", "user", "user_email", "username", "role", "is_owner"]
+
+    def get_is_owner(self, obj):
+        return obj.organization.owner_id == obj.user_id
+
+
+class OrganizationInviteSerializer(serializers.ModelSerializer):
+    invited_by_email = serializers.EmailField(source="invited_by.email", read_only=True)
+    is_expired = serializers.SerializerMethodField()
+
+    class Meta:
+        model = OrganizationInvite
+        fields = [
+            "id",
+            "email",
+            "role",
+            "created_at",
+            "expires_at",
+            "accepted_at",
+            "invited_by_email",
+            "is_expired",
+        ]
+
+    def get_is_expired(self, obj):
+        return obj.is_expired()

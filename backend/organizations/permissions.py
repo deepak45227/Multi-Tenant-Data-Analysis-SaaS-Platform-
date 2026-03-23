@@ -29,7 +29,12 @@ ROLE_PERMISSIONS = {
 }
 
 
+from rest_framework.exceptions import PermissionDenied
 from .models import Membership
+
+
+class OrgPermissionError(PermissionDenied, PermissionError):
+    pass
 
 def check_permission(user, organization, permission_key):
     
@@ -42,14 +47,14 @@ def check_permission(user, organization, permission_key):
             organization=organization
         )
     except Membership.DoesNotExist:
-        raise PermissionError("User not in organization")
+        raise OrgPermissionError("User not in organization")
 
     role = membership.role
     permissions = ROLE_PERMISSIONS.get(role, {})
     
     
     if not permissions.get(permission_key, False):
-        raise PermissionError("Permission denied")
+        raise OrgPermissionError("Permission denied")
        
     
    

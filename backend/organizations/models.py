@@ -1,6 +1,7 @@
+import uuid
 from django.db import models
 from django.conf import settings
-from django.forms import ValidationError
+from django.utils import timezone
 
 
 class Organization(models.Model):
@@ -47,14 +48,7 @@ class Membership(models.Model):
 
     
     def clean(self):
-             if self.role == "owner":
-               existing_owner = Membership.objects.filter(
-                   organization=self.organization,
-               role="owner"
-               ).exclude(pk=self.pk).exists()
-
-               if existing_owner:
-                   raise ValidationError("Organization already has an owner.")
+        return
     
     class Meta:
         unique_together = ('user', 'organization')
@@ -70,5 +64,44 @@ class Membership(models.Model):
 
     def __str__(self):
         return f"{self.user.email} - {self.organization.name} "  
+
+
+class OrganizationInvite(models.Model):
+    organization = models.ForeignKey(
+        Organization,
+        on_delete=models.CASCADE,
+        related_name="invites"
+    )
+    email = models.EmailField()
+    role = models.CharField(max_length=20, choices=Membership.ROLE_CHOICES, default="member")
+    token = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
+    invited_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        related_name="sent_invites",
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    expires_at = models.DateTimeField()
+    accepted_at = models.DateTimeField(null=True, blank=True)
+    accepted_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="accepted_invites",
+    )
+
+    class Meta:
+        indexes = [
+            models.Index(fields=["email"]),
+            models.Index(fields=["token"]),
+        ]
+
+    def is_expired(self):
+        return self.expires_at and self.expires_at < timezone.now()
+
+    def __str__(self):
+        return f"{self.email} -> {self.organization.name}"
     
 

@@ -146,6 +146,15 @@ This platform is tenant-aware by organization. Every major backend resource is t
 - `POST /api/token/`
 - `POST /api/token/refresh/`
 
+### Email verification + password flows
+
+- `POST /api/accounts/verify-email/`
+- `POST /api/accounts/resend-verification/`
+- `POST /api/accounts/password/forgot/`
+- `POST /api/accounts/password/reset/`
+- `POST /api/accounts/password/change/`
+- `GET /api/accounts/me/`
+
 ### Access model
 
 - Most APIs require JWT (`IsAuthenticated`).
@@ -160,6 +169,12 @@ Base URL prefix: `/api`
 
 - `POST /api/accounts/register/`  
   Register user with `email`, `username`, `password`.
+- `POST /api/accounts/verify-email/`
+- `POST /api/accounts/resend-verification/`
+- `POST /api/accounts/password/forgot/`
+- `POST /api/accounts/password/reset/`
+- `POST /api/accounts/password/change/`
+- `GET /api/accounts/me/`
 
 ### Organizations
 
@@ -169,7 +184,10 @@ Base URL prefix: `/api`
 - `POST /api/organizations/members/<org_id>/add-member/`
 - `PATCH /api/organizations/members/<membership_id>/update-role/`
 - `DELETE /api/organizations/members/<membership_id>/delete/`
-- `POST /api/organizations/organizations/<org_id>/transfer-ownership/`
+- `GET /api/organizations/invites/<org_id>/`
+- `POST /api/organizations/invites/<invite_id>/resend/`
+- `DELETE /api/organizations/invites/<invite_id>/revoke/`
+- `POST /api/organizations/transfer-ownership/<org_id>/`
 
 ### Datasets 
 
@@ -307,6 +325,12 @@ Email/reporting:
 - `EMAIL_HOST_USER`
 - `EMAIL_HOST_PASSWORD`
 - `DEFAULT_FROM_EMAIL` (recommended)
+- `EMAIL_HOST` (default `smtp.gmail.com`)
+- `EMAIL_PORT` (default `587`)
+- `EMAIL_USE_TLS` / `EMAIL_USE_SSL`
+- `FRONTEND_URL` (used in email links)
+- `PASSWORD_RESET_TIMEOUT` (seconds, default `86400`)
+- `INVITE_EXPIRY_DAYS` (default `7`)
 
 Storage paths (currently set in settings):
 

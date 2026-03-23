@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef, useCallback, useMemo, createContext, useContext } from "react";
+import { useState, useEffect, createContext, useContext } from "react";
 import Landing from "./pages/LandingPage";
 import AuthPage from "./pages/AuthPage";
+import AccountPage from "./pages/AccountPage";
 import Overview from "./pages/OverviewPage";
 import DatasetsPage from "./pages/DatasetsPage";
 import PipelinePage from "./pages/PipelinePage";
@@ -28,7 +29,7 @@ const api = async (path, opts = {}, token = null) => {
   let res;
   try {
     res = await fetch(`${BASE}${path}`, { ...opts, headers });
-  } catch (err) {
+  } catch {
     throw { status: 0, data: { detail: `Cannot reach backend API at ${BASE}. Verify the deployed API URL and CORS settings.` } };
   }
   const data = await res.json().catch(() => ({}));
@@ -327,9 +328,12 @@ const AppShell = ({ token, isDark, toggleTheme }) => {
         token={token}
         api={api}
         getApiErrorMessage={getApiErrorMessage}
+        ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }}
+        hooks={{ useTheme, useAuth, useNav }}
       />
     ),
     reports: <ReportsPage selectedOrg={selectedOrg} token={token} api={api} getApiErrorMessage={getApiErrorMessage} ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />,
+    account: <AccountPage token={token} api={api} getApiErrorMessage={getApiErrorMessage} ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />,
   };
 
   return (
@@ -356,6 +360,7 @@ export default function App() {
   const [isDark, setIsDark] = useState(true);
   const t = isDark ? themes.dark : themes.light;
   const [page, setPage] = useState("landing");
+  const [actionParams, setActionParams] = useState({});
   const [auth, setAuth] = useState(() => {
     try { const s = sessionStorage.getItem("databi_auth"); return s ? JSON.parse(s) : null; } catch { return null; }
   });
@@ -363,17 +368,35 @@ export default function App() {
   const login = (token, user) => {
     const a = { token, user };
     setAuth(a);
-    try { sessionStorage.setItem("databi_auth", JSON.stringify(a)); } catch {}
+    try { sessionStorage.setItem("databi_auth", JSON.stringify(a)); } catch { /* ignore storage errors */ }
     setPage("app");
   };
 
   const logout = () => {
     setAuth(null);
-    try { sessionStorage.removeItem("databi_auth"); } catch {}
+    try { sessionStorage.removeItem("databi_auth"); } catch { /* ignore storage errors */ }
     setPage("landing");
   };
 
-  useEffect(() => { if (auth?.token) setPage("app"); }, []);
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const action = params.get("action");
+    if (action) {
+      setActionParams({
+        action,
+        uid: params.get("uid"),
+        token: params.get("token"),
+        invite: params.get("invite"),
+        email: params.get("email"),
+      });
+      if (action === "verify") setPage("verify");
+      if (action === "reset") setPage("reset");
+      if (action === "register") setPage("register");
+      window.history.replaceState({}, document.title, window.location.pathname);
+      return;
+    }
+    if (auth?.token) setPage("app");
+  }, []);
 
   const navValue = { setPage, page };
   const authValue = { login, logout, token: auth?.token, user: auth?.user };
@@ -384,8 +407,11 @@ export default function App() {
         <NavCtx.Provider value={navValue}>
           <GlobalStyle t={t} />
           {page === "landing" && <Landing ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />}
-          {page === "login" && <AuthPage mode="login" api={api} getApiErrorMessage={getApiErrorMessage} ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />}
-          {page === "register" && <AuthPage mode="register" api={api} getApiErrorMessage={getApiErrorMessage} ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />}
+          {page === "login" && <AuthPage mode="login" api={api} getApiErrorMessage={getApiErrorMessage} actionParams={actionParams} ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />}
+          {page === "register" && <AuthPage mode="register" api={api} getApiErrorMessage={getApiErrorMessage} actionParams={actionParams} ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />}
+          {page === "forgot" && <AuthPage mode="forgot" api={api} getApiErrorMessage={getApiErrorMessage} actionParams={actionParams} ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />}
+          {page === "reset" && <AuthPage mode="reset" api={api} getApiErrorMessage={getApiErrorMessage} actionParams={actionParams} ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />}
+          {page === "verify" && <AuthPage mode="verify" api={api} getApiErrorMessage={getApiErrorMessage} actionParams={actionParams} ui={{ Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon }} hooks={{ useTheme, useAuth, useNav }} />}
           {page === "app" && auth?.token && (
             <AppShell token={auth.token} isDark={isDark} toggleTheme={() => setIsDark(p => !p)} />
           )}

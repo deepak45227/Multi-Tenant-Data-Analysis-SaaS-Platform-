@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback, useMemo } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 
 const PipelinePage = ({ selectedOrg, token, initialDataset, api, getApiErrorMessage, ui, hooks }) => {
   const { Btn, Input, Card, Badge, Spinner, EmptyState, Modal, Icon } = ui;
@@ -22,6 +22,7 @@ const PipelinePage = ({ selectedOrg, token, initialDataset, api, getApiErrorMess
   const [addingStep, setAddingStep] = useState(false);
   const [applyLoading, setApplyLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const [hoveredOp, setHoveredOp] = useState("");
   const [stepForm, setStepForm] = useState({
     type: "visual",
     operation: "remove_nulls",
@@ -616,6 +617,9 @@ const PipelinePage = ({ selectedOrg, token, initialDataset, api, getApiErrorMess
             </Btn>
           </div>
         </div>
+        <div style={{ marginBottom: "0.45rem", minHeight: 18, fontSize: "0.77rem", color: hoveredOp ? t.text : t.textMuted, fontWeight: hoveredOp ? 600 : 500 }}>
+          {hoveredOp || "Hover a transform action to see its name"}
+        </div>
         <div
           style={
             compactRibbon
@@ -642,17 +646,36 @@ const PipelinePage = ({ selectedOrg, token, initialDataset, api, getApiErrorMess
           }
         >
           {visualOps.map((op) => (
-            <Btn
+            <button
               key={op.key}
-              variant="secondary"
-              size="sm"
-              icon={op.icon}
+              type="button"
+              title={op.label}
+              onMouseEnter={() => setHoveredOp(op.label)}
+              onMouseLeave={() => setHoveredOp("")}
               onClick={() => openAddStepModal("visual", op.key)}
-              style={compactRibbon ? { justifyContent: "center", minWidth: 140 } : { justifyContent: "center", width: "100%" }}
+              style={{
+                border: `1px solid ${t.border}`,
+                background: t.surfaceAlt,
+                color: t.text,
+                borderRadius: "10px",
+                width: compactRibbon ? 48 : "100%",
+                minWidth: compactRibbon ? 48 : 0,
+                height: 46,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: !session ? "not-allowed" : "pointer",
+                opacity: !session ? 0.55 : 1,
+                transition: "all 0.15s ease",
+                fontSize: "0.76rem",
+                fontWeight: 600,
+                gap: "0.35rem",
+              }}
               disabled={!session}
             >
-              {op.label}
-            </Btn>
+              <Icon name={op.icon} size={16} />
+              {!compactRibbon && <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{op.label}</span>}
+            </button>
           ))}
         </div>
       </Card>
