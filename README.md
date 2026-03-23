@@ -171,7 +171,7 @@ Base URL prefix: `/api`
 - `DELETE /api/organizations/members/<membership_id>/delete/`
 - `POST /api/organizations/organizations/<org_id>/transfer-ownership/`
 
-### Datasets
+### Datasets 
 
 - `POST /api/datasets/upload/` (multipart file upload)
 - `GET /api/datasets/list/?organization=<org_id>`
